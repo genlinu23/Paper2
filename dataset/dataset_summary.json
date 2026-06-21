@@ -1,0 +1,34 @@
+{
+  "dataset_kind": "metadata_only_no_fulltext_no_pdf",
+  "all_corpus_papers": 3611,
+  "all_corpus_doi_nonempty": 3611,
+  "kg_used_papers_with_reaction_labels": 2497,
+  "pdf_files_in_local_source_library": 4262,
+  "json_files_in_local_source_library": 3611,
+  "body_chunks": 299284,
+  "body_chunk_docs": 3611,
+  "libraries": {
+    "lib1": 1388,
+    "lib2": 894,
+    "lib3": 441,
+    "lib4": 400,
+    "lib5": 488
+  },
+  "classes": {
+    "classA": 3469,
+    "classB": 142
+  },
+  "reaction_system_distribution": {
+    "other_reaction": 899,
+    "CO2RR": 1092,
+    "non_reaction": 156,
+    "unknown": 203,
+    "both": 43,
+    "CORR": 104
+  },
+  "source_paths_local": {
+    "pdf_library": "C:\\Users\\logan\\Desktop\\project2_strict\\strict_clean_v2\\final_rule_based_ab_v1\\library",
+    "json_library": "C:\\Users\\logan\\Desktop\\project2_strict\\strict_clean_v2\\final_rule_based_ab_v1\\membership_aligned_dataset_v1\\source_json_flat",
+    "chunk_library": "C:\\Users\\logan\\Desktop\\project2_strict\\strict_clean_v2\\final_rule_based_ab_v1\\membership_aligned_dataset_v1\\chunk_run_v3\\03_text_chunks"
+  }
+}

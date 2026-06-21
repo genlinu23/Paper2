@@ -11,6 +11,17 @@ Key locked artifacts:
 - `outputs/step2_causal_kg_v8_paper_reaction_system`
 - `outputs/step3_reasoning_v13_paper_reaction_system_full_diagnosis`
 
+Public corpus metadata:
+
+- `dataset/doi_list_all_3611.csv`
+- `dataset/doi_list_kg_used_2497_with_reaction_system.csv`
+- `dataset/dataset_summary.json`
+- `dataset/README.md`
+
+The `dataset/` directory is metadata-only. It includes DOI manifests, library/class
+partitions, chunk counts, and paper-level reaction-system labels. It does not include
+PDFs, parsed full text, abstracts, conclusions, or chunk text.
+
 Step 1 implementation for the Reactor workflow.
 
 Project rule: no substitute paths are allowed. Missing inputs, metadata, or LLM integration must fail explicitly.
