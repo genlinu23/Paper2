@@ -1,0 +1,8 @@
+﻿relation,src_type,dst_type,definition
+supports,Paper,Claim,A literature source supports a design-relevant causal or structural claim.
+has_component,Reactor,Separator/Electrolyte/Gas Feed/Cathode/Anode,A reactor architecture contains a named component.
+improves,Cathode/Anode/Separator/Electrolyte/Gas Feed/Operating Condition/Reactor,Performance,"A component, feed, or operating condition improves a performance or transport function."
+causes_risk,Cathode/Anode/Separator/Electrolyte/Gas Feed/Operating Condition/Reactor,Failure Mode,"A component, feed, or operating condition introduces or increases a failure risk."
+caused_by,Failure Mode,Operating Condition/Separator/Electrolyte/Gas Feed/Cathode/Anode,"A failure mode is caused by a transport bottleneck, operating condition, or component limitation."
+evidenced_by,Diagnosis,Performance/Operating Condition,"A diagnosis, failure mode, or claim is evidenced by measured voltage, EIS, FE, photo, or similar evidence."
+replaces,Cathode/Anode/Separator/Electrolyte/Gas Feed,Cathode/Anode/Separator/Electrolyte/Gas Feed,A next design or component replaces a previous bottleneck component.

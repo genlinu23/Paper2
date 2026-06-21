@@ -1,0 +1,49 @@
+# D3 Recommendation Memo - R6
+
+Primary bottleneck: Cathode-side transport instability: the present structure does not robustly maintain gas-aerosol-solid contacting, leading to local flooding/dry-out and rising transport losses.
+Hypothesis: The main limitation is not intrinsic Cu activity but instability of the cathode transport path. A porous PTFE-supported Cu cathode with a thin PCRL should better partition gas and electrolyte, creating a controlled thin wetted zone at the catalyst that stabilizes gas-aerosol-solid contact. In this structure, ion transport is helped by the thin PCRL rather than bulk flooding; water management benefits from PTFE hydrophobicity that resists overfilling but carries risk of dry-out if overused; gas access benefits from the porous PTFE pathway already used for gas-fed cathodes; cation availability near the catalyst is better regulated by the local reduction layer, though AEM transport does not supply K+ and bulk cation supply must still come from electrolyte-side access; ohmic loss may decrease if the reaction zone remains thin but may increase if the PCRL is too thick; mechanical stability should improve because PTFE-backed porous layers are established separator/transport components, though compression and interfacial adhesion remain risks.
+
+## New Architecture
+A gradual R7 convergence to a gas-fed flow-cell/MEA-like cathode architecture in which a Cu catalyst is supported on a porous PTFE transport layer and coupled to a thin PCRL, so the cathode transport path is intentionally split into gas access through PTFE pores and a short liquid/ion path at the catalyst for gas-aerosol-solid contacting.
+
+## Design Changes
+- Replace the baseline cathode backing with a porous PTFE transport layer carrying a thin Cu catalyst film plus a sub-10 μm polymeric cation-reduction layer (PCRL), implemented in a flow-cell/MEA-style gas-aerosol-solid contacting cathode.
+
+## Rationale
+This recommendation stays within the provided evidence by combining two directly relevant KG elements already linked to carbon-reduction cathodes: Cu on porous PTFE GDL with PCRL and gas-fed/flow-cell reactor formats. The KG contains a cathode node 'Cu on porous PTFE GDL with PCRL' with PCRL thickness <10 μm, connected to both 'MEA cell with PCRL coupled CEM' and 'PCRL coupled CEM cell' (doc_1072, doc_1775). That is the closest evidence-backed cathode transport design for a single-variable R6→R7 change. The porous PTFE element is also consistent with the KG gas-feed node 'CO2 gas feed to porous PTFE gas diffusion layer' and with PTFE porous layers used as transport/separator elements in other electrochemical cells. For the six transport functions: (1) ion transport: benefit expected from shortening the wetted ion path to a thin local layer rather than relying on bulk-filled pores; risk is added resistance if PCRL is overthick. (2) water management: PTFE porous layers are hydrophobic; the HPL/PTFE node shows 146° water contact angle and associated long stability in another reactor, which supports the general claim that hydrophobic porous PTFE can resist excess liquid invasion, but transfer risk remains because too much hydrophobicity can dry the catalyst region. (3) gas access: porous PTFE-backed gas-fed cathodes are directly evidenced in the KG and are the most relevant route to maintain gas transport to Cu sites. (4) cation availability: there is no KG evidence that an AEM transmits K+; therefore the benefit claim is limited to local electrolyte organization near the catalyst through the thin reduction layer, while risk remains that excessive isolation from electrolyte lowers alkali-cation availability. (5) ohmic loss: a thinner, localized liquid path can lower transport-associated voltage loss, but any polymer layer can also raise resistance if not minimized. (6) mechanical stability: PTFE-based porous transport layers and PTFE gaskets appear repeatedly in reactor hardware, supporting durability/compression handling, but interfacial adhesion of Cu/PCRL on PTFE must be verified experimentally. The alkaline context also demands caution because KOH improves CORR-related performance in several KG links, yet KOH is also linked to flooding, salting, and CO2-reactivity risks; therefore the change should target local transport architecture, not a more aggressive electrolyte shift.
+
+## Expected Improvement
+More stable gas-aerosol-solid contacting at the cathode should reduce local transport loss and widen the operating window before flooding, with improved sustained CORR/CO-reduction performance at fixed catalyst composition.
+
+## Risks
+- Excess hydrophobicity can cause local dry-out and loss of ionic contact.
+- PCRL addition can increase ohmic resistance if thickness or coverage is too large.
+- KOH-based operation still carries flooding risk and electrolyte salting / CO2 reaction risks in alkaline environments.
+- If the catalyst/PTFE interface is poorly adhered, mechanical durability under flow/compression may limit gains.
+
+## Minimum Experiment
+- Build one cathode variant only: Cu on porous PTFE GDL with sub-10 μm PCRL, keeping catalyst identity/loading, electrolyte, membrane, and flow hardware unchanged.
+- Test in the existing CO-reduction/flow-cell configuration under the same KOH electrolyte used in the baseline.
+- Run short steady-state holds across relevant current densities and record FE, partial currents, cell voltage, and time-to-flooding or dry-out.
+
+## Discriminating Test
+- A/B compare the same Cu catalyst loading on (i) current cathode backing versus (ii) porous PTFE backing with PCRL, in the same flow-cell geometry and electrolyte.
+- Track partial current density / FE versus time while stepping humidity or electrolyte feed to determine whether the modified layer widens the operating window before flooding or dry-out.
+- Measure cell resistance/voltage at matched current to confirm that any gain comes from transport stabilization rather than a catalyst change alone.
+
+## Diagnostic Trigger
+- Observed cathode transport loss consistent with unstable gas-aerosol-solid contact.
+- Flooding or dry-out symptoms at the cathode.
+- Need to preserve gas access while maintaining a thin wetted pathway to catalytic sites in CORR/CO-reduction conditions.
+
+Go/No-Go: Go if the PTFE+PCRL cathode sustains higher FE or partial current at matched voltage for at least several-hour operation while showing reduced sensitivity to flooding/dry-out. No-go if added PTFE/PCRL lowers performance through excess resistance or insufficient wetting, or if gains appear only at startup but not under steady operation.
+
+## Literature
+- doc_1072 | 10.1021/acsenergylett.1c01122 | Single Pass CO<sub>2</sub> Conversion Exceeding 85% in the Electrosynthesis of Multicarbon Products via Local CO<sub>2</sub> Regeneration
+- doc_1775 | 10.1021/acsenergylett.1c01122 | Single Pass CO<sub>2</sub> Conversion Exceeding 85% in the Electrosynthesis of Multicarbon Products via Local CO<sub>2</sub> Regeneration
+- doc_2026 | 10.1038/s41467-025-57116-x | High H2O2 production in membrane-free electrolyzer via anodic bubble shielding towards robust rural disinfection
+
+Score: 0.83
+
+Referenced nodes: 97
+Referenced edges: 80

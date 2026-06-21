@@ -1,0 +1,64 @@
+{
+  "round_id": "R1",
+  "layers": [
+    {
+      "order": 1,
+      "component": "cathode",
+      "material": "Cu",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 2,
+      "component": "electrolyte/interlayer",
+      "material": "described in recommendation",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 3,
+      "component": "separator",
+      "material": "porous PTFE, PTFE, diaphragm, separator, AEM, membrane",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 4,
+      "component": "anode",
+      "material": "Pt, HOR",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    }
+  ],
+  "cathode_feed": [
+    "CO2"
+  ],
+  "anode_feed": [
+    "H2"
+  ],
+  "use_koh_spray": false,
+  "prewetting": [
+    "prewetting described in recommendation"
+  ],
+  "gas_params": {
+    "cathode_flow": "10-50 sccm, feed from generated recommendation: CO2",
+    "anode_flow": "10-50 sccm, feed from generated recommendation: H2",
+    "pressure": "near ambient, balanced across compartments"
+  },
+  "gasket_and_clamping": [
+    "not specified by recommendation"
+  ],
+  "test_plan": [
+    "Assemble a single zero-gap AEM-MEA cell using the same catalysts as baseline, with AEM as the anion-conducting separator and a porous PTFE gas-side layer only for gas distribution/hydrophobic separation.",
+    "Use the same CO2 feed and electrolyte as baseline to isolate architecture as the only variable.",
+    "Collect EIS/HFR, polarization, and short stability data, plus flooding indicators and product/selectivity readouts."
+  ],
+  "teardown_photo_points": [
+    "not specified by recommendation"
+  ],
+  "safety_checks": [
+    "standard electrochemical cell safety checks",
+    "H2 leak check"
+  ],
+  "notes": "Zero-gap AEM membrane-electrode assembly in which the cathode is membrane-adjacent for short anion transport, paired with a porous PTFE gas-side diffusion/separator layer that preserves hydrophobic gas access but is excluded from the main ionic conduction thickness."
+}

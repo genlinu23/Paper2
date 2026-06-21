@@ -1,0 +1,44 @@
+[
+  {
+    "relation": "supports",
+    "src_type": "Paper",
+    "dst_type": "Claim",
+    "definition": "A literature source supports a design-relevant causal or structural claim."
+  },
+  {
+    "relation": "has_component",
+    "src_type": "Reactor",
+    "dst_type": "Separator/Electrolyte/Gas Feed/Cathode/Anode",
+    "definition": "A reactor architecture contains a named component."
+  },
+  {
+    "relation": "improves",
+    "src_type": "Cathode/Anode/Separator/Electrolyte/Gas Feed/Operating Condition/Reactor",
+    "dst_type": "Performance",
+    "definition": "A component, feed, or operating condition improves a performance or transport function."
+  },
+  {
+    "relation": "causes_risk",
+    "src_type": "Cathode/Anode/Separator/Electrolyte/Gas Feed/Operating Condition/Reactor",
+    "dst_type": "Failure Mode",
+    "definition": "A component, feed, or operating condition introduces or increases a failure risk."
+  },
+  {
+    "relation": "caused_by",
+    "src_type": "Failure Mode",
+    "dst_type": "Operating Condition/Separator/Electrolyte/Gas Feed/Cathode/Anode",
+    "definition": "A failure mode is caused by a transport bottleneck, operating condition, or component limitation."
+  },
+  {
+    "relation": "evidenced_by",
+    "src_type": "Diagnosis",
+    "dst_type": "Performance/Operating Condition",
+    "definition": "A diagnosis, failure mode, or claim is evidenced by measured voltage, EIS, FE, photo, or similar evidence."
+  },
+  {
+    "relation": "replaces",
+    "src_type": "Cathode/Anode/Separator/Electrolyte/Gas Feed",
+    "dst_type": "Cathode/Anode/Separator/Electrolyte/Gas Feed",
+    "definition": "A next design or component replaces a previous bottleneck component."
+  }
+]

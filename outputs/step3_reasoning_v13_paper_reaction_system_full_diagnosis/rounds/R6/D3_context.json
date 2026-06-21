@@ -1,0 +1,2135 @@
+{
+  "subgraph": {
+    "nodes": [
+      {
+        "node_id": "Anode:HPL_coated_anode_with_PTFE_hydrophobic_porous_layer",
+        "type": "Anode",
+        "label": "HPL-coated anode with PTFE hydrophobic porous layer",
+        "props": {
+          "material": "PTFE hydrophobic porous layer",
+          "pore_size": "0.22-1.6 μm",
+          "pore_depth": "16 ± 0.5 μm",
+          "water_contact_angle": "146°",
+          "bubble_contact_angle": "40°"
+        }
+      },
+      {
+        "node_id": "Anode:NiFe_LDH",
+        "type": "Anode",
+        "label": "NiFe LDH",
+        "props": {}
+      },
+      {
+        "node_id": "Anode:Pt_catalyst_on_microporous_PTFE_gas_diffusion_substrate",
+        "type": "Anode",
+        "label": "Pt catalyst on microporous PTFE gas diffusion substrate",
+        "props": {
+          "structure": "200 nm sputtered Pt"
+        }
+      },
+      {
+        "node_id": "Anode:anode_with_PTFE_hydrophobic_porous_layer_HPL",
+        "type": "Anode",
+        "label": "anode with PTFE hydrophobic porous layer (HPL)",
+        "props": {
+          "pore_size": "0.22-1.6 μm",
+          "pore_depth": "16 μm",
+          "water_contact_angle": "146°",
+          "bubble_contact_angle": "40°"
+        }
+      },
+      {
+        "node_id": "Anode:sputtered_Pt_catalyst_on_microporous_PTFE_gas_diffusion_substrate",
+        "type": "Anode",
+        "label": "sputtered Pt catalyst on microporous PTFE gas diffusion substrate",
+        "props": {
+          "thickness": "200 nm"
+        }
+      },
+      {
+        "node_id": "Cathode:Co_qPyH_molecular_catalyst_grafted_on_TiO2",
+        "type": "Cathode",
+        "label": "Co-qPyH molecular catalyst grafted on TiO2",
+        "props": {}
+      },
+      {
+        "node_id": "Cathode:Composite_CO2_reduction_cathode_with_Ag_catalyst_on_porous_PTFE_membrane_and_carbon_nanoparticles",
+        "type": "Cathode",
+        "label": "Composite CO2 reduction cathode with Ag catalyst on porous PTFE membrane and carbon nanoparticles",
+        "props": {}
+      },
+      {
+        "node_id": "Cathode:Cu2O_photocathode",
+        "type": "Cathode",
+        "label": "Cu2O photocathode",
+        "props": {}
+      },
+      {
+        "node_id": "Cathode:Cu_on_porous_PTFE_GDL_with_PCRL",
+        "type": "Cathode",
+        "label": "Cu on porous PTFE GDL with PCRL",
+        "props": {
+          "PCRL thickness": "<10 micrometers"
+        }
+      },
+      {
+        "node_id": "Cathode:Cu_or_Ag_thin_film_on_nanoporous_PTFE_membrane",
+        "type": "Cathode",
+        "label": "Cu or Ag thin film on nanoporous PTFE membrane",
+        "props": {
+          "surface_area": "0.5 cm2"
+        }
+      },
+      {
+        "node_id": "Cathode:MoS2_x_catalyst_film",
+        "type": "Cathode",
+        "label": "MoS2+x catalyst film",
+        "props": {
+          "thickness": "50-100 nm"
+        }
+      },
+      {
+        "node_id": "Cathode:Nanoporous_CuZn_catalysts_on_PTFE_with_controlled_Cu_Zn_ratios",
+        "type": "Cathode",
+        "label": "Nanoporous CuZn catalysts on PTFE with controlled Cu/Zn ratios",
+        "props": {
+          "film_thickness": "~200 nm"
+        }
+      },
+      {
+        "node_id": "Cathode:Pt_Ru_RuO2_catalyst_with_Pt_single_atoms_on_Ru_and_RuO2_supports",
+        "type": "Cathode",
+        "label": "Pt–Ru/RuO2 catalyst with Pt single atoms on Ru and RuO2 supports",
+        "props": {
+          "Pt content": "~1.0 % atomic"
+        }
+      },
+      {
+        "node_id": "Electrolyte:2_M_KOH_pretreatment_and_anion_exchange",
+        "type": "Electrolyte",
+        "label": "2 M KOH pretreatment and anion exchange",
+        "props": {}
+      },
+      {
+        "node_id": "Electrolyte:KOH_electrolyte",
+        "type": "Electrolyte",
+        "label": "KOH electrolyte",
+        "props": {
+          "concentrations": "0.1 M, 1.0 M"
+        }
+      },
+      {
+        "node_id": "Electrolyte:Water_molecules",
+        "type": "Electrolyte",
+        "label": "Water molecules",
+        "props": {
+          "count": ">1300 per PSII monomer",
+          "organization": "two layers on stromal and lumenal surfaces"
+        }
+      },
+      {
+        "node_id": "Failure_Mode:Electrolyte_instability_from_KOH_and_CO2_reaction",
+        "type": "Failure Mode",
+        "label": "Electrolyte instability from KOH and CO2 reaction",
+        "props": {}
+      },
+      {
+        "node_id": "Failure_Mode:H2O2_degradation_via_anodic_oxidation_and_cathodic_reduction",
+        "type": "Failure Mode",
+        "label": "H2O2 degradation via anodic oxidation and cathodic reduction",
+        "props": {}
+      },
+      {
+        "node_id": "Failure_Mode:cathodic_corrosion",
+        "type": "Failure Mode",
+        "label": "cathodic corrosion",
+        "props": {
+          "onset_potential_vs_RHE": "-0.4 V",
+          "electrolyte": "10 M NaOH"
+        }
+      },
+      {
+        "node_id": "Failure_Mode:electrolyte_instability_from_reaction_between_KOH_and_CO2",
+        "type": "Failure Mode",
+        "label": "electrolyte instability from reaction between KOH and CO2",
+        "props": {}
+      },
+      {
+        "node_id": "Failure_Mode:electrolyte_salting_in_alkaline_environment",
+        "type": "Failure Mode",
+        "label": "electrolyte salting in alkaline environment",
+        "props": {}
+      },
+      {
+        "node_id": "Failure_Mode:flooding",
+        "type": "Failure Mode",
+        "label": "flooding",
+        "props": {
+          "description": "Flooding through gas diffusion layer into CO gas chamber causing slight decrease in C2+ selectivity"
+        }
+      },
+      {
+        "node_id": "Failure_Mode:minor_corrosion_of_amorphous_carbon_matrix_in_base",
+        "type": "Failure Mode",
+        "label": "minor corrosion of amorphous carbon matrix in base",
+        "props": {
+          "condition": "potential sweeps in 1 M KOH",
+          "effect": "disintegration and loss of active materials, continuous degradation"
+        }
+      },
+      {
+        "node_id": "Gas_Feed:Anode_gas_outlet_rich_in_recovered_CO2_recirculated_to_cathode_inlet",
+        "type": "Gas Feed",
+        "label": "Anode gas outlet rich in recovered CO2 recirculated to cathode inlet",
+        "props": {}
+      },
+      {
+        "node_id": "Gas_Feed:Anode_outlet_gas_with_99_pure_recovered_CO2_recirculated_to_cathode",
+        "type": "Gas Feed",
+        "label": "Anode outlet gas with >99% pure recovered CO2 recirculated to cathode",
+        "props": {}
+      },
+      {
+        "node_id": "Gas_Feed:CO2_gas_feed_to_porous_PTFE_gas_diffusion_layer",
+        "type": "Gas Feed",
+        "label": "CO2 gas feed to porous PTFE gas diffusion layer",
+        "props": {}
+      },
+      {
+        "node_id": "Gas_Feed:Hydrogen_side_carbon_plate_and_oxygen_side_titanium_plate",
+        "type": "Gas Feed",
+        "label": "Hydrogen side carbon plate and oxygen side titanium plate",
+        "props": {}
+      },
+      {
+        "node_id": "Gas_Feed:Water_molecules_feed",
+        "type": "Gas Feed",
+        "label": "Water molecules feed",
+        "props": {
+          "role": "substrates for dioxygen formation and proton transfer"
+        }
+      },
+      {
+        "node_id": "Gas_Feed:hydrogen_air",
+        "type": "Gas Feed",
+        "label": "hydrogen–air",
+        "props": {}
+      },
+      {
+        "node_id": "Operating_Condition:Delithiation_peaks_at_0_41_and_0_53_V_correspond_to_amorphous_Li_Si_phases",
+        "type": "Operating Condition",
+        "label": "Delithiation peaks at 0.41 and 0.53 V correspond to amorphous Li-Si phases",
+        "props": {}
+      },
+      {
+        "node_id": "Operating_Condition:current_density_range_5_to_50_mA_cm_2_for_Raman_tests",
+        "type": "Operating Condition",
+        "label": "current density range 5 to 50 mA cm−2 for Raman tests",
+        "props": {}
+      },
+      {
+        "node_id": "Operating_Condition:near_neutral_pH_6_8_7_2",
+        "type": "Operating Condition",
+        "label": "near-neutral pH 6.8-7.2",
+        "props": {}
+      },
+      {
+        "node_id": "Operating_Condition:onset_potential_for_cathodic_corrosion",
+        "type": "Operating Condition",
+        "label": "onset potential for cathodic corrosion",
+        "props": {
+          "value": "-1.3 V vs NHE",
+          "electrolyte": "10 M NaOH"
+        }
+      },
+      {
+        "node_id": "Operating_Condition:potentials_referenced_to_RHE_with_70_iR_correction",
+        "type": "Operating Condition",
+        "label": "potentials referenced to RHE with 70% iR correction",
+        "props": {
+          "pH": "13.6 ± 0.1"
+        }
+      },
+      {
+        "node_id": "Performance:97_selectivity_for_CO_at_0_06_V_vs_RHE_with_0_8_mA_cm2_current_density",
+        "type": "Performance",
+        "label": "97% selectivity for CO at −0.06 V vs RHE with 0.8 mA/cm2 current density",
+        "props": {
+          "turnover_number": "8000",
+          "turnover_frequency": "1.1 s-1"
+        }
+      },
+      {
+        "node_id": "Performance:Current_density_10_mA_cm_at_1_61_V_vs_RHE",
+        "type": "Performance",
+        "label": "Current density 10 mA cm⁻² at 1.61 V vs RHE",
+        "props": {
+          "overpotential": "0.38 V",
+          "oxygen_evolution_onset": "1.52 V vs RHE",
+          "stability": "stable over 20 CV sweeps"
+        }
+      },
+      {
+        "node_id": "Performance:Electrolyte_alkalinity_impacts_CORR_in_neutral_and_weak_alkaline",
+        "type": "Performance",
+        "label": "Electrolyte alkalinity impacts CORR in neutral and weak alkaline",
+        "props": {}
+      },
+      {
+        "node_id": "Performance:FE",
+        "type": "Performance",
+        "label": "FE",
+        "props": {
+          "FE": "75% at 300 mA/cm2",
+          "electrolyte": "neutral",
+          "condition": "moderately decreased local CO2 concentration"
+        }
+      },
+      {
+        "node_id": "Performance:Gas_fed_cathode_electrolyzers_sustain_high_current_density_and_durability",
+        "type": "Performance",
+        "label": "Gas-fed cathode electrolyzers sustain high current density and durability",
+        "props": {}
+      },
+      {
+        "node_id": "Performance:H2O2_production_10_05_g_L_at_40_mA_cm2_after_5_h",
+        "type": "Performance",
+        "label": "H2O2 production 10.05 g/L at 40 mA/cm2 after 5 h",
+        "props": {
+          "H2O2_concentration": "10.05 ± 0.05 g L−1",
+          "current_density": "40 mA cm−2",
+          "duration": "5 h",
+          "production_rate": "4.20 ± 0.15 g L−1 h−1"
+        }
+      },
+      {
+        "node_id": "Performance:HER_activity_2x_Pt_C_catalyst",
+        "type": "Performance",
+        "label": "HER activity >2x Pt/C catalyst",
+        "props": {
+          "stability": "no significant degradation after 5000 cycles"
+        }
+      },
+      {
+        "node_id": "Performance:No_photocorrosion_of_g_C3N4_and_BCNx_photocathodes",
+        "type": "Performance",
+        "label": "No photocorrosion of g-C3N4 and BCNx photocathodes",
+        "props": {
+          "evidence": "unchanged XRD patterns after chronoamperometry"
+        }
+      },
+      {
+        "node_id": "Performance:current_densities_comparable_to_Pt_cathode_in_kinetic_region",
+        "type": "Performance",
+        "label": "current densities comparable to Pt cathode in kinetic region",
+        "props": {
+          "voltage_range": ">0.75 V",
+          "max_power_density": "0.39 W/cm2 at 1.0 bar H2-air"
+        }
+      },
+      {
+        "node_id": "Performance:current_density_1_A_cm2_achievable",
+        "type": "Performance",
+        "label": "current density > 1 A/cm2 achievable",
+        "props": {}
+      },
+      {
+        "node_id": "Performance:high_current_density_operation",
+        "type": "Performance",
+        "label": "high current density operation",
+        "props": {
+          "current_density": "500 and 1000 mA cm-2",
+          "overpotential": "240 and 270 mV",
+          "stability": "excellent stability at 500 mA cm-2 for over 100 hours"
+        }
+      },
+      {
+        "node_id": "Performance:no_degradation_of_aqueous_cathode_and_current_collector_after_100_cycles",
+        "type": "Performance",
+        "label": "no degradation of aqueous cathode and current collector after 100 cycles",
+        "props": {}
+      },
+      {
+        "node_id": "Performance:overpotential_reduction_with_alkaline_electrolyte",
+        "type": "Performance",
+        "label": "overpotential reduction with alkaline electrolyte",
+        "props": {}
+      },
+      {
+        "node_id": "Performance:stable_100_h_operation_at_20_mA_cm2_with_75_efficiency",
+        "type": "Performance",
+        "label": "stable 100 h operation at 20 mA/cm2 with 75% efficiency",
+        "props": {
+          "duration": "100 h",
+          "current_density": "20 mA cm−2",
+          "H2O2_concentration": "7.3 ± 0.4 g L−1",
+          "current_efficiency": "75 ± 4%"
+        }
+      },
+      {
+        "node_id": "Reactor:AEMWE_single_cell_setup_with_PTFE_gaskets_and_porous_transport_layers",
+        "type": "Reactor",
+        "label": "AEMWE single-cell setup with PTFE gaskets and porous transport layers",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:Alkaline_HER_electrocatalysis",
+        "type": "Reactor",
+        "label": "Alkaline HER electrocatalysis",
+        "props": {
+          "electrolyte_concentration": "1 M and 0.1 M KOH"
+        }
+      },
+      {
+        "node_id": "Reactor:CO2_and_CO_electrolysis_reactor",
+        "type": "Reactor",
+        "label": "CO2 and CO electrolysis reactor",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:CO2_electrolyser_with_gas_compartment_and_catholyte_anolyte_compartments",
+        "type": "Reactor",
+        "label": "CO2 electrolyser with gas compartment and catholyte/anolyte compartments",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:CO2_electroreduction_with_glucose_oxidation_anode",
+        "type": "Reactor",
+        "label": "CO2 electroreduction with glucose oxidation anode",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:CO_reduction_reactor",
+        "type": "Reactor",
+        "label": "CO reduction reactor",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:CO_reduction_reactor_with_Cu_MPs_and_OD_Cu_cathodes",
+        "type": "Reactor",
+        "label": "CO reduction reactor with Cu MPs and OD-Cu cathodes",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:Cu2O_photocathode_with_AZO_and_TiO2_protective_layers_and_MoS2_x_catalyst",
+        "type": "Reactor",
+        "label": "Cu2O photocathode with AZO and TiO2 protective layers and MoS2+x catalyst",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:Electrochemical_CO_reduction_reactor",
+        "type": "Reactor",
+        "label": "Electrochemical CO reduction reactor",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:Electrochemical_cell_with_Pt_counter_and_Hg_HgO_reference_electrodes",
+        "type": "Reactor",
+        "label": "Electrochemical cell with Pt counter and Hg/HgO reference electrodes",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:Electrochemical_flow_cell",
+        "type": "Reactor",
+        "label": "Electrochemical flow cell",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:Flow_cell",
+        "type": "Reactor",
+        "label": "Flow cell",
+        "props": {
+          "electrolyte": "1 M KOH",
+          "feature": "enhanced mass transport"
+        }
+      },
+      {
+        "node_id": "Reactor:Glucose_electrolysis_cell_with_NiFeOx_anode_and_NiFeN_cathode",
+        "type": "Reactor",
+        "label": "Glucose electrolysis cell with NiFeOx anode and NiFeN cathode",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:Glucose_electrolyzer_with_NiFeOx_NF_anode_and_NiFeN_NF_cathode_separated_by_anion_exchange_membrane",
+        "type": "Reactor",
+        "label": "Glucose electrolyzer with NiFeOx-NF anode and NiFeN-NF cathode separated by anion-exchange membrane",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:H_type_electrochemical_flow_cell",
+        "type": "Reactor",
+        "label": "H-type electrochemical flow cell",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:H_type_electrolyzer",
+        "type": "Reactor",
+        "label": "H-type electrolyzer",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:MEA_cell_with_PCRL_coupled_CEM",
+        "type": "Reactor",
+        "label": "MEA cell with PCRL coupled CEM",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:Membrane_Electrode_Assembly_MEA_with_5_cm2_area",
+        "type": "Reactor",
+        "label": "Membrane Electrode Assembly (MEA) with 5 cm2 area",
+        "props": {
+          "MEA_area": "5 cm2"
+        }
+      },
+      {
+        "node_id": "Reactor:PCRL_coupled_CEM_cell",
+        "type": "Reactor",
+        "label": "PCRL coupled CEM cell",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:PEC_flow_cell_with_back_illuminated_Si_photoanode",
+        "type": "Reactor",
+        "label": "PEC flow cell with back-illuminated Si photoanode",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:PtTe2_nanosheet_reactor",
+        "type": "Reactor",
+        "label": "PtTe2 nanosheet reactor",
+        "props": {
+          "structure": "CdI2-type trigonal (1T) structure",
+          "lateral_dimensions": "1–15 μm",
+          "thickness": "0.6–6 nm"
+        }
+      },
+      {
+        "node_id": "Reactor:Three_electrode_configuration_with_Ag_AgCl_reference_electrode",
+        "type": "Reactor",
+        "label": "Three-electrode configuration with Ag/AgCl reference electrode",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:Two_electrode_flow_electrolyser",
+        "type": "Reactor",
+        "label": "Two-electrode flow electrolyser",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:Zero_gap_electrolyzer_cell",
+        "type": "Reactor",
+        "label": "Zero-gap electrolyzer cell",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:Zn_air_battery",
+        "type": "Reactor",
+        "label": "Zn–air battery",
+        "props": {
+          "mechanical_recharge": "refilling Zn plate and KOH electrolyte"
+        }
+      },
+      {
+        "node_id": "Reactor:continuous_flow_Raman_electrochemical_cell",
+        "type": "Reactor",
+        "label": "continuous-flow Raman electrochemical cell",
+        "props": {
+          "feature": "in-situ Raman microscopy"
+        }
+      },
+      {
+        "node_id": "Reactor:custom_designed_flow_cell",
+        "type": "Reactor",
+        "label": "custom-designed flow cell",
+        "props": {
+          "feature": "quick electrolyte switching at constant potential or current"
+        }
+      },
+      {
+        "node_id": "Reactor:divided_three_compartment_electrochemical_cell",
+        "type": "Reactor",
+        "label": "divided three-compartment electrochemical cell",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:electrochemical_flow_cell",
+        "type": "Reactor",
+        "label": "electrochemical flow cell",
+        "props": {
+          "feature": "near surface-sensitive in situ characterization at high current densities"
+        }
+      },
+      {
+        "node_id": "Reactor:flow_cell",
+        "type": "Reactor",
+        "label": "flow cell",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:flow_cell_electrolyzer",
+        "type": "Reactor",
+        "label": "flow-cell electrolyzer",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:gas_diffusion_flow_cell",
+        "type": "Reactor",
+        "label": "gas diffusion flow cell",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:gas_phase_connected_H_type_electrochemical_flow_cell",
+        "type": "Reactor",
+        "label": "gas-phase-connected H-type electrochemical flow cell",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:home_made_MEA_electrolyzer_cell_with_serpentine_flow_channels_and_internal_heating_cooling",
+        "type": "Reactor",
+        "label": "home-made MEA electrolyzer cell with serpentine flow channels and internal heating/cooling",
+        "props": {
+          "active_area": "1.5x1.5 cm2",
+          "membrane_thickness": "50 μm"
+        }
+      },
+      {
+        "node_id": "Reactor:membrane_free_continuous_flow_reactor_100_mL",
+        "type": "Reactor",
+        "label": "membrane-free continuous flow reactor 100 mL",
+        "props": {
+          "volume": "100 mL",
+          "membrane_free": "true"
+        }
+      },
+      {
+        "node_id": "Reactor:membrane_free_continuous_flow_reactor_with_100_mL_volume_and_paired_HPL_coated_electrodes",
+        "type": "Reactor",
+        "label": "membrane-free continuous flow reactor with 100 mL volume and paired HPL-coated electrodes",
+        "props": {
+          "volume": "100 mL",
+          "membrane_free": "true"
+        }
+      },
+      {
+        "node_id": "Reactor:photocathode_with_p_type_Cu_In_Ga_Se2_semiconductor_and_buried_p_n_junction",
+        "type": "Reactor",
+        "label": "photocathode with p-type Cu(In,Ga)Se2 semiconductor and buried p-n junction",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:three_compartment_flow_cell",
+        "type": "Reactor",
+        "label": "three-compartment flow cell",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:three_electrode_flow_cell",
+        "type": "Reactor",
+        "label": "three-electrode flow cell",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:two_electrode_electrolyzer",
+        "type": "Reactor",
+        "label": "two-electrode electrolyzer",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:zero_gap_MEA_cell",
+        "type": "Reactor",
+        "label": "zero-gap MEA cell",
+        "props": {
+          "configuration": "zero-gap membrane electrode assembly",
+          "anode_area": "9 cm2",
+          "cathode_area": "9 cm2"
+        }
+      },
+      {
+        "node_id": "Reactor:zero_gap_gas_flow_cell",
+        "type": "Reactor",
+        "label": "zero-gap gas flow cell",
+        "props": {}
+      },
+      {
+        "node_id": "Reactor:zero_gap_membrane_electrode_assembly",
+        "type": "Reactor",
+        "label": "zero-gap membrane-electrode assembly",
+        "props": {}
+      },
+      {
+        "node_id": "Separator:AEMIONTM_membrane",
+        "type": "Separator",
+        "label": "AEMIONTM membrane",
+        "props": {}
+      },
+      {
+        "node_id": "Separator:Aluminium_doped_zinc_oxide_AZO_layer",
+        "type": "Separator",
+        "label": "Aluminium-doped zinc oxide (AZO) layer",
+        "props": {
+          "thickness": "20 nm"
+        }
+      },
+      {
+        "node_id": "Separator:PTFE_gaskets",
+        "type": "Separator",
+        "label": "PTFE gaskets",
+        "props": {
+          "function": "hard stops for compression"
+        }
+      },
+      {
+        "node_id": "Separator:Titanium_dioxide_TiO2_layer",
+        "type": "Separator",
+        "label": "Titanium dioxide (TiO2) layer",
+        "props": {
+          "thickness": "100 nm"
+        }
+      },
+      {
+        "node_id": "Separator:flat_TiO2_protective_layer",
+        "type": "Separator",
+        "label": "flat TiO2 protective layer",
+        "props": {}
+      },
+      {
+        "node_id": "Separator:mesoporous_TiO2_protective_layer",
+        "type": "Separator",
+        "label": "mesoporous TiO2 protective layer",
+        "props": {
+          "thickness": "5-10 nm"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "src": "Reactor:photocathode_with_p_type_Cu_In_Ga_Se2_semiconductor_and_buried_p_n_junction",
+        "dst": "Separator:flat_TiO2_protective_layer",
+        "relation": "has_component",
+        "source_doc_id": "doc_0390",
+        "source_chunk_id": "doc_0390_chunk_035590",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_0390"
+      },
+      {
+        "src": "Reactor:photocathode_with_p_type_Cu_In_Ga_Se2_semiconductor_and_buried_p_n_junction",
+        "dst": "Separator:mesoporous_TiO2_protective_layer",
+        "relation": "has_component",
+        "source_doc_id": "doc_0390",
+        "source_chunk_id": "doc_0390_chunk_035590",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_0390"
+      },
+      {
+        "src": "Reactor:photocathode_with_p_type_Cu_In_Ga_Se2_semiconductor_and_buried_p_n_junction",
+        "dst": "Performance:97_selectivity_for_CO_at_0_06_V_vs_RHE_with_0_8_mA_cm2_current_density",
+        "relation": "improves",
+        "source_doc_id": "doc_0390",
+        "source_chunk_id": "doc_0390_chunk_035603",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_0390"
+      },
+      {
+        "src": "Reactor:AEMWE_single_cell_setup_with_PTFE_gaskets_and_porous_transport_layers",
+        "dst": "Electrolyte:2_M_KOH_pretreatment_and_anion_exchange",
+        "relation": "has_component",
+        "source_doc_id": "doc_1976",
+        "source_chunk_id": "doc_1976_chunk_180355",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_1976"
+      },
+      {
+        "src": "Reactor:AEMWE_single_cell_setup_with_PTFE_gaskets_and_porous_transport_layers",
+        "dst": "Gas_Feed:Hydrogen_side_carbon_plate_and_oxygen_side_titanium_plate",
+        "relation": "has_component",
+        "source_doc_id": "doc_1976",
+        "source_chunk_id": "doc_1976_chunk_180356",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_1976"
+      },
+      {
+        "src": "Reactor:AEMWE_single_cell_setup_with_PTFE_gaskets_and_porous_transport_layers",
+        "dst": "Cathode:Pt_Ru_RuO2_catalyst_with_Pt_single_atoms_on_Ru_and_RuO2_supports",
+        "relation": "has_component",
+        "source_doc_id": "doc_1976",
+        "source_chunk_id": "doc_1976_chunk_180355",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_1976"
+      },
+      {
+        "src": "Reactor:AEMWE_single_cell_setup_with_PTFE_gaskets_and_porous_transport_layers",
+        "dst": "Anode:NiFe_LDH",
+        "relation": "has_component",
+        "source_doc_id": "doc_1976",
+        "source_chunk_id": "doc_1976_chunk_180355",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_1976"
+      },
+      {
+        "src": "Reactor:AEMWE_single_cell_setup_with_PTFE_gaskets_and_porous_transport_layers",
+        "dst": "Separator:AEMIONTM_membrane",
+        "relation": "has_component",
+        "source_doc_id": "doc_1976",
+        "source_chunk_id": "doc_1976_chunk_180356",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_1976"
+      },
+      {
+        "src": "Reactor:AEMWE_single_cell_setup_with_PTFE_gaskets_and_porous_transport_layers",
+        "dst": "Separator:PTFE_gaskets",
+        "relation": "has_component",
+        "source_doc_id": "doc_1976",
+        "source_chunk_id": "doc_1976_chunk_180356",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_1976"
+      },
+      {
+        "src": "Reactor:AEMWE_single_cell_setup_with_PTFE_gaskets_and_porous_transport_layers",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_1976",
+        "source_chunk_id": "doc_1976_chunk_180355",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_1976"
+      },
+      {
+        "src": "Gas_Feed:hydrogen_air",
+        "dst": "Performance:current_densities_comparable_to_Pt_cathode_in_kinetic_region",
+        "relation": "improves",
+        "source_doc_id": "doc_1716",
+        "source_chunk_id": "doc_1716_chunk_156533",
+        "experiment_ref": null,
+        "reaction_system": "other_reaction",
+        "paper_reaction_system": "other_reaction",
+        "paper_doc_id": "doc_1716"
+      },
+      {
+        "src": "Reactor:Membrane_Electrode_Assembly_MEA_with_5_cm2_area",
+        "dst": "Gas_Feed:Anode_gas_outlet_rich_in_recovered_CO2_recirculated_to_cathode_inlet",
+        "relation": "has_component",
+        "source_doc_id": "doc_1470",
+        "source_chunk_id": "doc_1470_chunk_132153",
+        "experiment_ref": null,
+        "reaction_system": "other_reaction",
+        "paper_reaction_system": "other_reaction",
+        "paper_doc_id": "doc_1470"
+      },
+      {
+        "src": "Reactor:Cu2O_photocathode_with_AZO_and_TiO2_protective_layers_and_MoS2_x_catalyst",
+        "dst": "Separator:Titanium_dioxide_TiO2_layer",
+        "relation": "has_component",
+        "source_doc_id": "doc_1172",
+        "source_chunk_id": "doc_1172_chunk_108331",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_1172"
+      },
+      {
+        "src": "Reactor:Cu2O_photocathode_with_AZO_and_TiO2_protective_layers_and_MoS2_x_catalyst",
+        "dst": "Separator:Aluminium_doped_zinc_oxide_AZO_layer",
+        "relation": "has_component",
+        "source_doc_id": "doc_1172",
+        "source_chunk_id": "doc_1172_chunk_108331",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_1172"
+      },
+      {
+        "src": "Reactor:CO2_electrolyser_with_gas_compartment_and_catholyte_anolyte_compartments",
+        "dst": "Anode:sputtered_Pt_catalyst_on_microporous_PTFE_gas_diffusion_substrate",
+        "relation": "has_component",
+        "source_doc_id": "doc_0764",
+        "source_chunk_id": "doc_0764_chunk_073554",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_0764"
+      },
+      {
+        "src": "Reactor:Cu2O_photocathode_with_AZO_and_TiO2_protective_layers_and_MoS2_x_catalyst",
+        "dst": "Cathode:Cu2O_photocathode",
+        "relation": "has_component",
+        "source_doc_id": "doc_1172",
+        "source_chunk_id": "doc_1172_chunk_108331",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_1172"
+      },
+      {
+        "src": "Reactor:Cu2O_photocathode_with_AZO_and_TiO2_protective_layers_and_MoS2_x_catalyst",
+        "dst": "Cathode:MoS2_x_catalyst_film",
+        "relation": "has_component",
+        "source_doc_id": "doc_1172",
+        "source_chunk_id": "doc_1172_chunk_108331",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_1172"
+      },
+      {
+        "src": "Anode:anode_with_PTFE_hydrophobic_porous_layer_HPL",
+        "dst": "Failure_Mode:H2O2_degradation_via_anodic_oxidation_and_cathodic_reduction",
+        "relation": "causes_risk",
+        "source_doc_id": "doc_1598_chunk_145353",
+        "source_chunk_id": "doc_1598_chunk_145353",
+        "experiment_ref": null,
+        "reaction_system": "other_reaction",
+        "paper_reaction_system": "other_reaction",
+        "paper_doc_id": "doc_1598"
+      },
+      {
+        "src": "Gas_Feed:Water_molecules_feed",
+        "dst": "Electrolyte:Water_molecules",
+        "relation": "replaces",
+        "source_doc_id": "doc_1108",
+        "source_chunk_id": "doc_1108_chunk_103956",
+        "experiment_ref": null,
+        "reaction_system": "other_reaction",
+        "paper_reaction_system": "other_reaction",
+        "paper_doc_id": "doc_1108"
+      },
+      {
+        "src": "Reactor:PCRL_coupled_CEM_cell",
+        "dst": "Cathode:Cu_on_porous_PTFE_GDL_with_PCRL",
+        "relation": "has_component",
+        "source_doc_id": "doc_1775",
+        "source_chunk_id": "doc_1775_chunk_162445",
+        "experiment_ref": null,
+        "reaction_system": "other_reaction",
+        "paper_reaction_system": "other_reaction",
+        "paper_doc_id": "doc_1775"
+      },
+      {
+        "src": "Reactor:membrane_free_continuous_flow_reactor_100_mL",
+        "dst": "Anode:HPL_coated_anode_with_PTFE_hydrophobic_porous_layer",
+        "relation": "has_component",
+        "source_doc_id": "doc_2026",
+        "source_chunk_id": "doc_2026_chunk_185773",
+        "experiment_ref": null,
+        "reaction_system": "other_reaction",
+        "paper_reaction_system": "other_reaction",
+        "paper_doc_id": "doc_2026"
+      },
+      {
+        "src": "Reactor:membrane_free_continuous_flow_reactor_with_100_mL_volume_and_paired_HPL_coated_electrodes",
+        "dst": "Anode:anode_with_PTFE_hydrophobic_porous_layer_HPL",
+        "relation": "has_component",
+        "source_doc_id": "doc_1598_chunk_145421",
+        "source_chunk_id": "doc_1598_chunk_145421",
+        "experiment_ref": null,
+        "reaction_system": "other_reaction",
+        "paper_reaction_system": "other_reaction",
+        "paper_doc_id": "doc_1598"
+      },
+      {
+        "src": "Reactor:CO2_electroreduction_with_glucose_oxidation_anode",
+        "dst": "Gas_Feed:Anode_outlet_gas_with_99_pure_recovered_CO2_recirculated_to_cathode",
+        "relation": "has_component",
+        "source_doc_id": "doc_1909",
+        "source_chunk_id": "doc_1909_chunk_173490",
+        "experiment_ref": null,
+        "reaction_system": "other_reaction",
+        "paper_reaction_system": "other_reaction",
+        "paper_doc_id": "doc_1909"
+      },
+      {
+        "src": "Reactor:MEA_cell_with_PCRL_coupled_CEM",
+        "dst": "Cathode:Cu_on_porous_PTFE_GDL_with_PCRL",
+        "relation": "has_component",
+        "source_doc_id": "doc_1072",
+        "source_chunk_id": "doc_1072_chunk_101645",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_1072"
+      },
+      {
+        "src": "Anode:HPL_coated_anode_with_PTFE_hydrophobic_porous_layer",
+        "dst": "Performance:stable_100_h_operation_at_20_mA_cm2_with_75_efficiency",
+        "relation": "improves",
+        "source_doc_id": "doc_2026",
+        "source_chunk_id": "doc_2026_chunk_185737",
+        "experiment_ref": null,
+        "reaction_system": "other_reaction",
+        "paper_reaction_system": "other_reaction",
+        "paper_doc_id": "doc_2026"
+      },
+      {
+        "src": "Anode:HPL_coated_anode_with_PTFE_hydrophobic_porous_layer",
+        "dst": "Performance:H2O2_production_10_05_g_L_at_40_mA_cm2_after_5_h",
+        "relation": "improves",
+        "source_doc_id": "doc_2026",
+        "source_chunk_id": "doc_2026_chunk_185738",
+        "experiment_ref": null,
+        "reaction_system": "other_reaction",
+        "paper_reaction_system": "other_reaction",
+        "paper_doc_id": "doc_2026"
+      },
+      {
+        "src": "Failure_Mode:cathodic_corrosion",
+        "dst": "Operating_Condition:onset_potential_for_cathodic_corrosion",
+        "relation": "caused_by",
+        "source_doc_id": "doc_1132",
+        "source_chunk_id": "doc_1132_chunk_105580",
+        "experiment_ref": null,
+        "reaction_system": "CO2RR",
+        "paper_reaction_system": "CO2RR",
+        "paper_doc_id": "doc_1132"
+      },
+      {
+        "src": "Failure_Mode:flooding",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "caused_by",
+        "source_doc_id": "doc_0069",
+        "source_chunk_id": "doc_0069_chunk_008394",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_0069"
+      },
+      {
+        "src": "Reactor:Flow_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_2536",
+        "source_chunk_id": "doc_2536_chunk_235606",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_2536"
+      },
+      {
+        "src": "Reactor:electrochemical_flow_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0516",
+        "source_chunk_id": "doc_0516_chunk_046837",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_0516"
+      },
+      {
+        "src": "Electrolyte:KOH_electrolyte",
+        "dst": "Performance:FE",
+        "relation": "improves",
+        "source_doc_id": "doc_0499",
+        "source_chunk_id": "doc_0499_chunk_045228",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_0499"
+      },
+      {
+        "src": "Electrolyte:KOH_electrolyte",
+        "dst": "Performance:FE",
+        "relation": "improves",
+        "source_doc_id": "doc_0844",
+        "source_chunk_id": "doc_0844_chunk_079898",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_0844"
+      },
+      {
+        "src": "Reactor:custom_designed_flow_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0702",
+        "source_chunk_id": "doc_0702_chunk_067035",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_0702"
+      },
+      {
+        "src": "Reactor:three_electrode_flow_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0162",
+        "source_chunk_id": "doc_0162_chunk_017469",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_0162"
+      },
+      {
+        "src": "Reactor:Electrochemical_flow_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0516",
+        "source_chunk_id": "doc_0516_chunk_046837",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_0516"
+      },
+      {
+        "src": "Reactor:divided_three_compartment_electrochemical_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0428",
+        "source_chunk_id": "doc_0428_chunk_038742",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_0428"
+      },
+      {
+        "src": "Reactor:zero_gap_MEA_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0900",
+        "source_chunk_id": "doc_0900_chunk_085252",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_0900"
+      },
+      {
+        "src": "Reactor:PEC_flow_cell_with_back_illuminated_Si_photoanode",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0499",
+        "source_chunk_id": "doc_0499_chunk_045228",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_0499"
+      },
+      {
+        "src": "Reactor:Three_electrode_configuration_with_Ag_AgCl_reference_electrode",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0349",
+        "source_chunk_id": "doc_0349_chunk_032214",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_0349"
+      },
+      {
+        "src": "Electrolyte:KOH_electrolyte",
+        "dst": "Performance:Current_density_10_mA_cm_at_1_61_V_vs_RHE",
+        "relation": "improves",
+        "source_doc_id": "doc_1164",
+        "source_chunk_id": "doc_1164_chunk_107806",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_1164"
+      },
+      {
+        "src": "Electrolyte:KOH_electrolyte",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "replaces",
+        "source_doc_id": "doc_2482",
+        "source_chunk_id": "doc_2482_chunk_230360",
+        "experiment_ref": null,
+        "reaction_system": "CORR",
+        "paper_reaction_system": "CORR",
+        "paper_doc_id": "doc_2482"
+      },
+      {
+        "src": "Reactor:Glucose_electrolyzer_with_NiFeOx_NF_anode_and_NiFeN_NF_cathode_separated_by_anion_exchange_membrane",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_2244",
+        "source_chunk_id": "doc_2244_chunk_206710",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_2244"
+      },
+      {
+        "src": "Failure_Mode:electrolyte_salting_in_alkaline_environment",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "caused_by",
+        "source_doc_id": "doc_1528",
+        "source_chunk_id": "doc_1528_chunk_137929",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_1528"
+      },
+      {
+        "src": "Reactor:home_made_MEA_electrolyzer_cell_with_serpentine_flow_channels_and_internal_heating_cooling",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0678",
+        "source_chunk_id": "doc_0678_chunk_064347",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_0678"
+      },
+      {
+        "src": "Reactor:Alkaline_HER_electrocatalysis",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_1273",
+        "source_chunk_id": "doc_1273_chunk_115539",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "both",
+        "paper_doc_id": "doc_1273"
+      },
+      {
+        "src": "Reactor:Zn_air_battery",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0935",
+        "source_chunk_id": "doc_0935_chunk_088975",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "both",
+        "paper_doc_id": "doc_0935"
+      },
+      {
+        "src": "Electrolyte:KOH_electrolyte",
+        "dst": "Performance:FE",
+        "relation": "improves",
+        "source_doc_id": "doc_0907",
+        "source_chunk_id": "doc_0907_chunk_085751",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "both",
+        "paper_doc_id": "doc_0907"
+      },
+      {
+        "src": "Reactor:gas_phase_connected_H_type_electrochemical_flow_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_2576",
+        "source_chunk_id": "doc_2576_chunk_239666",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_2576"
+      },
+      {
+        "src": "Reactor:CO_reduction_reactor",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0138",
+        "source_chunk_id": "doc_0138_chunk_015532",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "both",
+        "paper_doc_id": "doc_0138"
+      },
+      {
+        "src": "Reactor:Electrochemical_CO_reduction_reactor",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_1082",
+        "source_chunk_id": "doc_1082_chunk_102310",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "both",
+        "paper_doc_id": "doc_1082"
+      },
+      {
+        "src": "Reactor:Electrochemical_flow_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_1687",
+        "source_chunk_id": "doc_1687_chunk_153666",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_1687"
+      },
+      {
+        "src": "Reactor:H_type_electrochemical_flow_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0387",
+        "source_chunk_id": "doc_0387_chunk_035359",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_0387"
+      },
+      {
+        "src": "Reactor:H_type_electrolyzer",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0553",
+        "source_chunk_id": "doc_0553_chunk_050577",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_0553"
+      },
+      {
+        "src": "Reactor:PtTe2_nanosheet_reactor",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_1389",
+        "source_chunk_id": "doc_1389_chunk_125138",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_1389"
+      },
+      {
+        "src": "Reactor:Two_electrode_flow_electrolyser",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0522",
+        "source_chunk_id": "doc_0522_chunk_047454",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "both",
+        "paper_doc_id": "doc_0522"
+      },
+      {
+        "src": "Reactor:Zero_gap_electrolyzer_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_1631",
+        "source_chunk_id": "doc_1631_chunk_148864",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_1631"
+      },
+      {
+        "src": "Reactor:continuous_flow_Raman_electrochemical_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0195",
+        "source_chunk_id": "doc_0195_chunk_020308",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "both",
+        "paper_doc_id": "doc_0195"
+      },
+      {
+        "src": "Reactor:flow_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_1528",
+        "source_chunk_id": "doc_1528_chunk_137959",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_1528"
+      },
+      {
+        "src": "Reactor:flow_cell_electrolyzer",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0358",
+        "source_chunk_id": "doc_0358_chunk_032964",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_0358"
+      },
+      {
+        "src": "Reactor:three_compartment_flow_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0189",
+        "source_chunk_id": "doc_0189_chunk_019538",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_0189"
+      },
+      {
+        "src": "Reactor:two_electrode_electrolyzer",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0368_chunk_033769",
+        "source_chunk_id": "doc_0368_chunk_033769",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_0368"
+      },
+      {
+        "src": "Reactor:zero_gap_membrane_electrode_assembly",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_1569",
+        "source_chunk_id": "doc_1569_chunk_142212",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_1569"
+      },
+      {
+        "src": "Electrolyte:KOH_electrolyte",
+        "dst": "Performance:HER_activity_2x_Pt_C_catalyst",
+        "relation": "improves",
+        "source_doc_id": "doc_1191",
+        "source_chunk_id": "doc_1191_chunk_109587",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "both",
+        "paper_doc_id": "doc_1191"
+      },
+      {
+        "src": "Electrolyte:KOH_electrolyte",
+        "dst": "Performance:current_density_1_A_cm2_achievable",
+        "relation": "improves",
+        "source_doc_id": "doc_0195",
+        "source_chunk_id": "doc_0195_chunk_020300",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "both",
+        "paper_doc_id": "doc_0195"
+      },
+      {
+        "src": "Electrolyte:KOH_electrolyte",
+        "dst": "Performance:overpotential_reduction_with_alkaline_electrolyte",
+        "relation": "improves",
+        "source_doc_id": "doc_0195",
+        "source_chunk_id": "doc_0195_chunk_020300",
+        "experiment_ref": null,
+        "reaction_system": "transferable",
+        "paper_reaction_system": "both",
+        "paper_doc_id": "doc_0195"
+      },
+      {
+        "src": "Electrolyte:KOH_electrolyte",
+        "dst": "Performance:Electrolyte_alkalinity_impacts_CORR_in_neutral_and_weak_alkaline",
+        "relation": "improves",
+        "source_doc_id": "doc_0073",
+        "source_chunk_id": "doc_0073_chunk_008876",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_0073"
+      },
+      {
+        "src": "Failure_Mode:minor_corrosion_of_amorphous_carbon_matrix_in_base",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "caused_by",
+        "source_doc_id": "doc_1190",
+        "source_chunk_id": "doc_1190_chunk_109532",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_1190"
+      },
+      {
+        "src": "Reactor:Glucose_electrolysis_cell_with_NiFeOx_anode_and_NiFeN_cathode",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0375",
+        "source_chunk_id": "doc_0375_chunk_034349",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_0375"
+      },
+      {
+        "src": "Cathode:Co_qPyH_molecular_catalyst_grafted_on_TiO2",
+        "dst": "Performance:97_selectivity_for_CO_at_0_06_V_vs_RHE_with_0_8_mA_cm2_current_density",
+        "relation": "improves",
+        "source_doc_id": "doc_0390",
+        "source_chunk_id": "doc_0390_chunk_035603",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_0390"
+      },
+      {
+        "src": "Separator:flat_TiO2_protective_layer",
+        "dst": "Performance:97_selectivity_for_CO_at_0_06_V_vs_RHE_with_0_8_mA_cm2_current_density",
+        "relation": "improves",
+        "source_doc_id": "doc_0390",
+        "source_chunk_id": "doc_0390_chunk_035603",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_0390"
+      },
+      {
+        "src": "Electrolyte:KOH_electrolyte",
+        "dst": "Performance:high_current_density_operation",
+        "relation": "improves",
+        "source_doc_id": "doc_1192",
+        "source_chunk_id": "doc_1192_chunk_109661",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_1192"
+      },
+      {
+        "src": "Reactor:CO2_and_CO_electrolysis_reactor",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0488",
+        "source_chunk_id": "doc_0488_chunk_044110",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_0488"
+      },
+      {
+        "src": "Reactor:Electrochemical_cell_with_Pt_counter_and_Hg_HgO_reference_electrodes",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_1292",
+        "source_chunk_id": "doc_1292_chunk_117034",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_1292"
+      },
+      {
+        "src": "Electrolyte:KOH_electrolyte",
+        "dst": "Failure_Mode:Electrolyte_instability_from_KOH_and_CO2_reaction",
+        "relation": "causes_risk",
+        "source_doc_id": "doc_0057",
+        "source_chunk_id": "doc_0057_chunk_005454",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "non_reaction",
+        "paper_doc_id": "doc_0057"
+      },
+      {
+        "src": "Failure_Mode:electrolyte_instability_from_reaction_between_KOH_and_CO2",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "caused_by",
+        "source_doc_id": "doc_1062",
+        "source_chunk_id": "doc_1062_chunk_100658",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_1062"
+      },
+      {
+        "src": "Electrolyte:KOH_electrolyte",
+        "dst": "Failure_Mode:electrolyte_instability_from_reaction_between_KOH_and_CO2",
+        "relation": "causes_risk",
+        "source_doc_id": "doc_1062",
+        "source_chunk_id": "doc_1062_chunk_100658",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_1062"
+      },
+      {
+        "src": "Reactor:zero_gap_gas_flow_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_0077",
+        "source_chunk_id": "doc_0077_chunk_009188",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_0077"
+      },
+      {
+        "src": "Reactor:gas_diffusion_flow_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_1062",
+        "source_chunk_id": "doc_1062_chunk_100677",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_1062"
+      },
+      {
+        "src": "Reactor:electrochemical_flow_cell",
+        "dst": "Electrolyte:KOH_electrolyte",
+        "relation": "has_component",
+        "source_doc_id": "doc_2338",
+        "source_chunk_id": "doc_2338_chunk_215063",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_2338"
+      },
+      {
+        "src": "Operating_Condition:near_neutral_pH_6_8_7_2",
+        "dst": "Performance:97_selectivity_for_CO_at_0_06_V_vs_RHE_with_0_8_mA_cm2_current_density",
+        "relation": "improves",
+        "source_doc_id": "doc_0390",
+        "source_chunk_id": "doc_0390_chunk_035603",
+        "experiment_ref": null,
+        "reaction_system": "unknown",
+        "paper_reaction_system": "unknown",
+        "paper_doc_id": "doc_0390"
+      }
+    ]
+  },
+  "refs": [
+    {
+      "doc_id": "doc_0390",
+      "doi": "10.1038/s41467-020-17125-4",
+      "title": "Photocathode functionalized with a molecular cobalt catalyst for selective carbon dioxide reduction in water"
+    },
+    {
+      "doc_id": "doc_1470",
+      "doi": "10.1038/s41467-022-30677-x",
+      "title": "Eliminating the need for anodic gas separation in CO2 electroreduction systems via liquid-to-liquid anodic upgrading"
+    },
+    {
+      "doc_id": "doc_1775",
+      "doi": "10.1021/acsenergylett.1c01122",
+      "title": "Single Pass CO<sub>2</sub> Conversion Exceeding 85% in the Electrosynthesis of Multicarbon Products via Local CO<sub>2</sub> Regeneration"
+    },
+    {
+      "doc_id": "doc_2026",
+      "doi": "10.1038/s41467-025-57116-x",
+      "title": "High H2O2 production in membrane-free electrolyzer via anodic bubble shielding towards robust rural disinfection"
+    },
+    {
+      "doc_id": "doc_1909",
+      "doi": "10.1038/s41467-022-30677-x",
+      "title": "Eliminating the need for anodic gas separation in CO2 electroreduction systems via liquid-to-liquid anodic upgrading"
+    },
+    {
+      "doc_id": "doc_1072",
+      "doi": "10.1021/acsenergylett.1c01122",
+      "title": "Single Pass CO<sub>2</sub> Conversion Exceeding 85% in the Electrosynthesis of Multicarbon Products via Local CO<sub>2</sub> Regeneration"
+    },
+    {
+      "doc_id": "doc_0069",
+      "doi": "10.1021/acscatal.0c01670",
+      "title": "Correlating Oxidation State and Surface Area to Activity from <i>Operando</i> Studies of Copper CO Electroreduction Catalysts in a Gas-Fed Device"
+    },
+    {
+      "doc_id": "doc_2536",
+      "doi": "10.1038/s41929-018-0084-7",
+      "title": "Steering post-C–C coupling selectivity enables high efficiency electroreduction of carbon dioxide to multi-carbon alcohols"
+    },
+    {
+      "doc_id": "doc_0499",
+      "doi": "10.1038/s41467-022-34926-x",
+      "title": "Back-illuminated photoelectrochemical flow cell for efficient CO2 reduction"
+    },
+    {
+      "doc_id": "doc_0844",
+      "doi": "10.1038/s41929-020-00547-0",
+      "title": "Electrochemical CO2-to-ethylene conversion on polyamine-incorporated Cu electrodes"
+    },
+    {
+      "doc_id": "doc_0162",
+      "doi": "10.1021/acsenergylett.9b00172",
+      "title": "Absence of Oxidized Phases in Cu under CO Reduction Conditions"
+    },
+    {
+      "doc_id": "doc_0428",
+      "doi": "10.1038/s41467-021-24059-y",
+      "title": "Converting copper sulfide to copper with surface sulfur for electrocatalytic alkyne semi-hydrogenation with water"
+    },
+    {
+      "doc_id": "doc_0900",
+      "doi": "10.1038/s41929-025-01341-6",
+      "title": "Selective formaldehyde condensation on phosphorus-rich copper catalyst to produce liquid C3+ chemicals in electrocatalytic CO2 reduction"
+    },
+    {
+      "doc_id": "doc_1528",
+      "doi": "10.1038/s41467-023-39505-2",
+      "title": "Asymmetric dinitrogen-coordinated nickel single-atomic sites for efficient CO2 electroreduction"
+    },
+    {
+      "doc_id": "doc_0678",
+      "doi": "10.1038/s41467-025-59604-6",
+      "title": "Non-isothermal CO2 electrolysis enables simultaneous enhanced electrochemical and anti-precipitation performance"
+    },
+    {
+      "doc_id": "doc_0935",
+      "doi": "10.1039/d0cs01482f",
+      "title": "Porphyrin-based frameworks for oxygen electrocatalysis and catalytic reduction of carbon dioxide"
+    },
+    {
+      "doc_id": "doc_0907",
+      "doi": "10.1038/s41929-025-01396-5",
+      "title": "Resolving non-covalent interactions between surface hydroxyl on Cu and interfacial water in alkaline CO electroreduction"
+    },
+    {
+      "doc_id": "doc_2576",
+      "doi": "10.1038/s41467-020-16847-9",
+      "title": "Efficient wettability-controlled electroreduction of CO2 to CO at Au/C interfaces"
+    },
+    {
+      "doc_id": "doc_0138",
+      "doi": "10.1021/acsenergylett.1c01639",
+      "title": "Glycerol Oxidation Pairs with Carbon Monoxide Reduction for Low-Voltage Generation of C<sub>2</sub> and C<sub>3</sub> Product Streams"
+    },
+    {
+      "doc_id": "doc_1082",
+      "doi": "10.1021/jacs.5b06227",
+      "title": "Probing the Active Surface Sites for CO Reduction on Oxide-Derived Copper Electrocatalysts"
+    },
+    {
+      "doc_id": "doc_1687",
+      "doi": "10.1038/s41929-022-00880-6",
+      "title": "Copper/alkaline earth metal oxide interfaces for electrochemical CO2-to-alcohol conversion by selective hydrogenation"
+    },
+    {
+      "doc_id": "doc_0387",
+      "doi": "10.1038/s41467-020-16847-9",
+      "title": "Efficient wettability-controlled electroreduction of CO2 to CO at Au/C interfaces"
+    },
+    {
+      "doc_id": "doc_1631",
+      "doi": "10.1038/s41560-021-00813-w",
+      "title": "Operando cathode activation with alkali metal cations for high current density operation of water-fed zero-gap carbon dioxide electrolysers"
+    },
+    {
+      "doc_id": "doc_0195",
+      "doi": "10.1021/jacs.0c06779",
+      "title": "In Situ Observation of the pH Gradient near the Gas Diffusion Electrode of CO<sub>2</sub> Reduction in Alkaline Electrolyte"
+    },
+    {
+      "doc_id": "doc_0358",
+      "doi": "10.1038/s41467-019-11542-w",
+      "title": "CO2 electrochemical catalytic reduction with a highly active cobalt phthalocyanine"
+    },
+    {
+      "doc_id": "doc_0189",
+      "doi": "10.1021/jacs.0c00971",
+      "title": "Grain-Boundary-Rich Copper for Efficient Solar-Driven Electrochemical CO<sub>2</sub> Reduction to Ethylene and Ethanol"
+    },
+    {
+      "doc_id": "doc_1569",
+      "doi": "10.1038/s41467-024-47319-z",
+      "title": "Ligand-modified nanoparticle surfaces influence CO electroreduction selectivity"
+    },
+    {
+      "doc_id": "doc_0073",
+      "doi": "10.1021/acscatal.0c03108",
+      "title": "pH Dependence of Cu Surface Speciation in the Electrochemical CO Reduction Reaction"
+    },
+    {
+      "doc_id": "doc_0488",
+      "doi": "10.1038/s41467-022-33199-8",
+      "title": "A unifying mechanism for cation effect modulating C1 and C2 productions from CO2 electroreduction"
+    },
+    {
+      "doc_id": "doc_0057",
+      "doi": "10.1016/j.joule.2020.07.009",
+      "title": "Cu-Ag Tandem Catalysts for High-Rate CO2 Electrolysis toward Multicarbons"
+    },
+    {
+      "doc_id": "doc_1062",
+      "doi": "10.1016/j.joule.2020.07.009",
+      "title": "Cu-Ag Tandem Catalysts for High-Rate CO2 Electrolysis toward Multicarbons"
+    },
+    {
+      "doc_id": "doc_0077",
+      "doi": "10.1021/acscatal.0c03609",
+      "title": "Environment Matters: CO<sub>2</sub>RR Electrocatalyst Performance Testing in a Gas-Fed Zero-Gap Electrolyzer"
+    }
+  ],
+  "prev_failures": [
+    "The prior cathode transport problem points to the need for a porous transport layer that can support gas, aerosol droplets, and solid catalytic sites in contact. In the CORR / CO-reduction direction, the next reasoning step should focus on stabilizing gas-aerosol-solid contact, reducing local transport loss, and avoiding flooding or dry-out."
+  ],
+  "seed_ids": [
+    "Anode:HPL_coated_anode_with_PTFE_hydrophobic_porous_layer",
+    "Anode:Pt_catalyst_on_microporous_PTFE_gas_diffusion_substrate",
+    "Anode:anode_with_PTFE_hydrophobic_porous_layer_HPL",
+    "Anode:sputtered_Pt_catalyst_on_microporous_PTFE_gas_diffusion_substrate",
+    "Cathode:Composite_CO2_reduction_cathode_with_Ag_catalyst_on_porous_PTFE_membrane_and_carbon_nanoparticles",
+    "Cathode:Cu_on_porous_PTFE_GDL_with_PCRL",
+    "Cathode:Cu_or_Ag_thin_film_on_nanoporous_PTFE_membrane",
+    "Cathode:Nanoporous_CuZn_catalysts_on_PTFE_with_controlled_Cu_Zn_ratios",
+    "Gas_Feed:Anode_gas_outlet_rich_in_recovered_CO2_recirculated_to_cathode_inlet",
+    "Gas_Feed:Anode_outlet_gas_with_99_pure_recovered_CO2_recirculated_to_cathode",
+    "Gas_Feed:CO2_gas_feed_to_porous_PTFE_gas_diffusion_layer",
+    "Gas_Feed:Water_molecules_feed",
+    "Operating_Condition:Delithiation_peaks_at_0_41_and_0_53_V_correspond_to_amorphous_Li_Si_phases",
+    "Operating_Condition:current_density_range_5_to_50_mA_cm_2_for_Raman_tests",
+    "Operating_Condition:onset_potential_for_cathodic_corrosion",
+    "Operating_Condition:potentials_referenced_to_RHE_with_70_iR_correction",
+    "Performance:Gas_fed_cathode_electrolyzers_sustain_high_current_density_and_durability",
+    "Performance:No_photocorrosion_of_g_C3N4_and_BCNx_photocathodes",
+    "Performance:current_densities_comparable_to_Pt_cathode_in_kinetic_region",
+    "Performance:no_degradation_of_aqueous_cathode_and_current_collector_after_100_cycles",
+    "Reactor:AEMWE_single_cell_setup_with_PTFE_gaskets_and_porous_transport_layers",
+    "Reactor:CO_reduction_reactor_with_Cu_MPs_and_OD_Cu_cathodes",
+    "Reactor:Cu2O_photocathode_with_AZO_and_TiO2_protective_layers_and_MoS2_x_catalyst",
+    "Reactor:photocathode_with_p_type_Cu_In_Ga_Se2_semiconductor_and_buried_p_n_junction"
+  ],
+  "seed_counts": {
+    "algorithm": "C_egograph_v2",
+    "anchor_selection": "type_balanced_role_disambiguated",
+    "anchors_by_type": {
+      "Anode": 4,
+      "Cathode": 4,
+      "Gas Feed": 4,
+      "Operating Condition": 4,
+      "Performance": 4,
+      "Reactor": 4
+    },
+    "role_types": [
+      "Gas Feed",
+      "Reactor",
+      "Cathode",
+      "Performance",
+      "Operating Condition",
+      "Anode"
+    ],
+    "total": 24
+  },
+  "retrieval": {
+    "algorithm": "C_egograph_v2",
+    "query_boundary": "diagnosis_anchors_only",
+    "anchor_count": 24,
+    "anchor_ids": [
+      "Anode:HPL_coated_anode_with_PTFE_hydrophobic_porous_layer",
+      "Anode:Pt_catalyst_on_microporous_PTFE_gas_diffusion_substrate",
+      "Anode:anode_with_PTFE_hydrophobic_porous_layer_HPL",
+      "Anode:sputtered_Pt_catalyst_on_microporous_PTFE_gas_diffusion_substrate",
+      "Cathode:Composite_CO2_reduction_cathode_with_Ag_catalyst_on_porous_PTFE_membrane_and_carbon_nanoparticles",
+      "Cathode:Cu_on_porous_PTFE_GDL_with_PCRL",
+      "Cathode:Cu_or_Ag_thin_film_on_nanoporous_PTFE_membrane",
+      "Cathode:Nanoporous_CuZn_catalysts_on_PTFE_with_controlled_Cu_Zn_ratios",
+      "Gas_Feed:Anode_gas_outlet_rich_in_recovered_CO2_recirculated_to_cathode_inlet",
+      "Gas_Feed:Anode_outlet_gas_with_99_pure_recovered_CO2_recirculated_to_cathode",
+      "Gas_Feed:CO2_gas_feed_to_porous_PTFE_gas_diffusion_layer",
+      "Gas_Feed:Water_molecules_feed",
+      "Operating_Condition:Delithiation_peaks_at_0_41_and_0_53_V_correspond_to_amorphous_Li_Si_phases",
+      "Operating_Condition:current_density_range_5_to_50_mA_cm_2_for_Raman_tests",
+      "Operating_Condition:onset_potential_for_cathodic_corrosion",
+      "Operating_Condition:potentials_referenced_to_RHE_with_70_iR_correction",
+      "Performance:Gas_fed_cathode_electrolyzers_sustain_high_current_density_and_durability",
+      "Performance:No_photocorrosion_of_g_C3N4_and_BCNx_photocathodes",
+      "Performance:current_densities_comparable_to_Pt_cathode_in_kinetic_region",
+      "Performance:no_degradation_of_aqueous_cathode_and_current_collector_after_100_cycles",
+      "Reactor:AEMWE_single_cell_setup_with_PTFE_gaskets_and_porous_transport_layers",
+      "Reactor:CO_reduction_reactor_with_Cu_MPs_and_OD_Cu_cathodes",
+      "Reactor:Cu2O_photocathode_with_AZO_and_TiO2_protective_layers_and_MoS2_x_catalyst",
+      "Reactor:photocathode_with_p_type_Cu_In_Ga_Se2_semiconductor_and_buried_p_n_junction"
+    ],
+    "anchor_one_hop_edges": 27,
+    "candidate_edges": 502,
+    "chain_counts": {
+      "one_hop_edges": 27,
+      "two_hop_edges": 475,
+      "candidate_edges": 502
+    },
+    "selection": "type_balanced_anchors_then_preserve_one_hop_edges_then_fill_by_local_token_cosine",
+    "preferred_reaction_system": "CORR",
+    "reaction_system_selection": "preferred_system_then_transferable_then_unknown_then_other_before_token_cosine",
+    "candidate_reaction_system_counts": {
+      "CO2RR": 215,
+      "CORR": 14,
+      "transferable": 24,
+      "other_reaction": 202,
+      "unknown": 47,
+      "MISSING": 0
+    },
+    "selected_reaction_system_counts": {
+      "CO2RR": 14,
+      "CORR": 14,
+      "transferable": 24,
+      "other_reaction": 10,
+      "unknown": 18,
+      "MISSING": 0
+    },
+    "query_terms": [
+      "the prior cathode transport problem points to the need for a porous transport layer that can support gas, aerosol droplets, and solid catalytic sites in contact. in the corr / co-reduction direction, the next reasoning step should focus on stabilizing gas-aerosol-solid contact, reducing local transport loss, and avoiding flooding or dry-out.",
+      "the",
+      "prior",
+      "cathode",
+      "transport",
+      "problem",
+      "points",
+      "to",
+      "need",
+      "for",
+      "porous",
+      "layer",
+      "that",
+      "can",
+      "support",
+      "gas",
+      "aerosol",
+      "droplets",
+      "and",
+      "solid",
+      "catalytic",
+      "sites",
+      "in",
+      "contact",
+      "corr",
+      "co-reduction",
+      "direction",
+      "next",
+      "reasoning",
+      "step",
+      "should",
+      "focus",
+      "on",
+      "stabilizing",
+      "gas-aerosol-solid",
+      "reducing",
+      "local",
+      "loss",
+      "avoiding",
+      "flooding",
+      "or",
+      "dry-out",
+      "spray",
+      "droplet",
+      "ptl",
+      "porous transport layer"
+    ],
+    "diagnosis_query_terms": [
+      "the prior cathode transport problem points to the need for a porous transport layer that can support gas, aerosol droplets, and solid catalytic sites in contact. in the corr / co-reduction direction, the next reasoning step should focus on stabilizing gas-aerosol-solid contact, reducing local transport loss, and avoiding flooding or dry-out.",
+      "the",
+      "prior",
+      "cathode",
+      "transport",
+      "problem",
+      "points",
+      "to",
+      "need",
+      "for",
+      "porous",
+      "layer",
+      "that",
+      "can",
+      "support",
+      "gas",
+      "aerosol",
+      "droplets",
+      "and",
+      "solid",
+      "catalytic",
+      "sites",
+      "in",
+      "contact",
+      "corr",
+      "co-reduction",
+      "direction",
+      "next",
+      "reasoning",
+      "step",
+      "should",
+      "focus",
+      "on",
+      "stabilizing",
+      "gas-aerosol-solid",
+      "reducing",
+      "local",
+      "loss",
+      "avoiding",
+      "flooding",
+      "or",
+      "dry-out"
+    ],
+    "retrieval_anchor_terms": [],
+    "anchor_selection": "type_balanced_role_disambiguated",
+    "role_types": [
+      "Gas Feed",
+      "Reactor",
+      "Cathode",
+      "Performance",
+      "Operating Condition",
+      "Anode"
+    ],
+    "anchors_by_type": {
+      "Anode": 4,
+      "Cathode": 4,
+      "Gas Feed": 4,
+      "Operating Condition": 4,
+      "Performance": 4,
+      "Reactor": 4
+    },
+    "candidate_nodes_by_type": {
+      "Anode": 618,
+      "Cathode": 3703,
+      "Claim": 3337,
+      "Diagnosis": 1005,
+      "Electrolyte": 987,
+      "Failure Mode": 2524,
+      "Gas Feed": 2023,
+      "Next Hypothesis": 46,
+      "Operating Condition": 2302,
+      "Performance": 9433,
+      "Reactor": 2063,
+      "Separator": 805
+    },
+    "transport_dimension_counts": {
+      "ion_transport": {
+        "candidate_edges": 0,
+        "global_candidate_edges": 0,
+        "selected_edges": 0
+      },
+      "water_management": {
+        "candidate_edges": 1,
+        "global_candidate_edges": 0,
+        "selected_edges": 1
+      },
+      "gas_access": {
+        "candidate_edges": 11,
+        "global_candidate_edges": 0,
+        "selected_edges": 11
+      },
+      "cation_availability": {
+        "candidate_edges": 0,
+        "global_candidate_edges": 0,
+        "selected_edges": 0
+      },
+      "ohmic_loss": {
+        "candidate_edges": 1,
+        "global_candidate_edges": 0,
+        "selected_edges": 1
+      },
+      "mechanical_stability": {
+        "candidate_edges": 7,
+        "global_candidate_edges": 0,
+        "selected_edges": 7
+      },
+      "_total": {
+        "candidate_edges": 80,
+        "selected_edges": 80
+      }
+    }
+  },
+  "chain_counts": {
+    "one_hop_edges": 27,
+    "two_hop_edges": 475,
+    "candidate_edges": 502
+  },
+  "transport_dimensions": {
+    "ion_transport": [
+      "ion transport",
+      "ionic conductivity",
+      "ion conduction",
+      "membrane resistance",
+      "anion transport",
+      "cation transport"
+    ],
+    "water_management": [
+      "water management",
+      "flooding",
+      "dry-out",
+      "dry out",
+      "water retention",
+      "humidification",
+      "wettability",
+      "water transport"
+    ],
+    "gas_access": [
+      "gas diffusion",
+      "gas access",
+      "triple-phase",
+      "three-phase",
+      "gde",
+      "porous transport",
+      "mass transport",
+      "gas transport"
+    ],
+    "cation_availability": [
+      "cation",
+      "k+",
+      "potassium",
+      "alkali metal cation",
+      "carbonate"
+    ],
+    "ohmic_loss": [
+      "ohmic",
+      "cell voltage",
+      "hfr",
+      "resistance",
+      "overpotential",
+      "impedance"
+    ],
+    "mechanical_stability": [
+      "mechanical",
+      "stability",
+      "degradation",
+      "crack",
+      "delamination",
+      "sealing",
+      "durability"
+    ]
+  },
+  "transport_dimension_counts": {
+    "ion_transport": {
+      "candidate_edges": 0,
+      "global_candidate_edges": 0,
+      "selected_edges": 0
+    },
+    "water_management": {
+      "candidate_edges": 1,
+      "global_candidate_edges": 0,
+      "selected_edges": 1
+    },
+    "gas_access": {
+      "candidate_edges": 11,
+      "global_candidate_edges": 0,
+      "selected_edges": 11
+    },
+    "cation_availability": {
+      "candidate_edges": 0,
+      "global_candidate_edges": 0,
+      "selected_edges": 0
+    },
+    "ohmic_loss": {
+      "candidate_edges": 1,
+      "global_candidate_edges": 0,
+      "selected_edges": 1
+    },
+    "mechanical_stability": {
+      "candidate_edges": 7,
+      "global_candidate_edges": 0,
+      "selected_edges": 7
+    },
+    "_total": {
+      "candidate_edges": 80,
+      "selected_edges": 80
+    }
+  },
+  "reaction_system_counts": {
+    "preferred": "CORR",
+    "candidate": {
+      "CO2RR": 215,
+      "CORR": 14,
+      "transferable": 24,
+      "other_reaction": 202,
+      "unknown": 47,
+      "MISSING": 0
+    },
+    "selected": {
+      "CO2RR": 14,
+      "CORR": 14,
+      "transferable": 24,
+      "other_reaction": 10,
+      "unknown": 18,
+      "MISSING": 0
+    },
+    "selection": "preferred_system_then_transferable_then_unknown_then_other_before_token_cosine"
+  },
+  "evidence_counts": {
+    "corr_terms": 33,
+    "co2rr_terms": 39
+  }
+}

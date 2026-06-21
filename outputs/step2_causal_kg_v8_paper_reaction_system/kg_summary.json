@@ -1,0 +1,54 @@
+{
+  "nodes": 32619,
+  "edges": 21833,
+  "node_types": {
+    "Anode": 997,
+    "Cathode": 3703,
+    "Claim": 3404,
+    "Diagnosis": 1042,
+    "Electrolyte": 1593,
+    "Failure Mode": 2625,
+    "Gas Feed": 2023,
+    "Next Hypothesis": 46,
+    "Operating Condition": 2302,
+    "Paper": 2583,
+    "Performance": 9433,
+    "Reactor": 2063,
+    "Separator": 805
+  },
+  "relations": {
+    "caused_by": 1499,
+    "causes_risk": 1630,
+    "evidenced_by": 358,
+    "has_component": 6210,
+    "improves": 8384,
+    "replaces": 282,
+    "supports": 3470
+  },
+  "traceable_edges": 21833,
+  "normalization": {
+    "input_kg_dir": "C:\\Users\\logan\\AppData\\Local\\Temp\\anode_reextract_m0v8qirl\\merged_raw",
+    "output_kg_dir": "C:\\Users\\logan\\reactor_agent\\outputs\\step2_causal_kg_v6_anode_edges",
+    "synonym_map": "C:\\Users\\logan\\reactor_agent\\reactor_agent\\config\\synonym_map.json",
+    "input_nodes": 32620,
+    "input_edges": 21833,
+    "redirected_node_ids": 2,
+    "deduped_edges": 0,
+    "groups": [
+      {
+        "group": "ptfe_separator_diaphragm",
+        "type": "Separator",
+        "canonical_node_id": "Separator:porous_PTFE_diaphragm",
+        "canonical_label": "porous PTFE diaphragm",
+        "members": [
+          "Separator:PTFE_porous_diaphragm",
+          "Separator:porous_PTFE_diaphragm"
+        ],
+        "member_incident_edges_before": {
+          "Separator:porous_PTFE_diaphragm": 18,
+          "Separator:PTFE_porous_diaphragm": 0
+        }
+      }
+    ]
+  }
+}

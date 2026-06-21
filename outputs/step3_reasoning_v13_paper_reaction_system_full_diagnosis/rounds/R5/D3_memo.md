@@ -1,0 +1,53 @@
+# D3 Recommendation Memo - R5
+
+Primary bottleneck: Cathode porous transport mismatch: carbon-paper pore architecture is not providing a sufficiently open, hydrophobic, and stable path for coupled gas/aerosol/droplet access in CORR gas-aerosol-solid contacting.
+Hypothesis: The present bottleneck is not catalyst chemistry but the carbon-paper pore network, which is poorly matched to gas-aerosol-solid contacting. A hydrophobic porous PTFE diaphragm should create a more open and stable transport path for gas and aerosol/droplet delivery while limiting liquid invasion, thereby improving sustained CORR contacting before any further stack changes.
+
+## New Architecture
+A gradual R5-to-R6 convergence toward a CORR flow cell in which the cathode-side porous transport path is a hydrophobic porous PTFE diaphragm/membrane rather than carbon paper, to support gas-aerosol-solid contacting without yet redefining the catalyst stack or separator scheme.
+
+## Design Changes
+- Replace the carbon-paper-based porous transport layer at the cathode with a hydrophobic porous PTFE diaphragm / membrane that provides an open gas-aerosol-solid contacting path while keeping the rest of the CORR flow-cell architecture unchanged.
+
+## Rationale
+The diagnosis explicitly identifies the carbon-paper pore structure as mismatched to aerosol or droplet transport, so the next single-variable change should target the porous transport path rather than catalyst identity. The KG provides transferable evidence for hydrophobic porous PTFE diaphragms/membranes as gas-path elements: the porous PTFE diaphragm is described as highly hydrophobic, with ~145° water contact angle and function as a gas-phase isolation interface, and a hydrophobic PTFE membrane with gas paths replaces that diaphragm in a later architecture while showing strong wetting resistance and no pore blocking. The KG also shows PTFE-based cathode constructions replacing earlier Ag/PTFE catalyst formats, supporting PTFE-centered gas-side architectures as an established direction rather than a new research jump. In CORR context, multiple flow-cell reactors operate with KOH electrolyte, and KOH is linked both to improved FE/current capability and to flooding/salting risks. Therefore the transport-layer change should be interpreted as a path-design intervention across six functions: (1) ion transport: benefit is limited because PTFE itself is not ion-conductive; risk is higher ionic path tortuosity unless the catalyst/electrolyte interface remains well wetted. (2) water management: strongest evidence-backed benefit, because the porous PTFE diaphragm is highly hydrophobic and hydrophobic PTFE gas-path membranes resist pore blocking; this should reduce liquid invasion relative to carbon paper. (3) gas access: evidence-backed benefit, because the PTFE diaphragm is explicitly used as a gas-phase isolation interface and hydrophobic PTFE membranes are defined with gas paths, matching the diagnosed need for an open gas-aerosol-solid path. (4) cation availability: no direct evidence that PTFE enhances K+ transport; indeed PTFE does not transmit cations, so the risk is that more hydrophobic separation from the liquid phase could reduce local cation availability unless the catalyst-side wetting remains adequate. (5) ohmic loss: risk, because the porous PTFE diaphragm has extremely low electrical conductivity, so unless the conductive catalyst/current-collector network is preserved, cell resistance can increase. (6) mechanical stability: likely benefit in chemical/wetting stability because PTFE structures are robust against pore blocking and biofouling in the KG, but attachment/compression risk remains because this replaces a structurally different carbon-paper support. This is a gradual convergence step consistent with the redline rule: only the porous transport architecture is changed now, not the full material stack or final system.
+
+## Expected Improvement
+More stable gas-aerosol-solid contacting with reduced flooding susceptibility and a more open gas pathway, enabling better sustained CORR mass transport than carbon paper, with the tradeoff that excessive PTFE thickness or poor catalyst-side electrical integration could increase ohmic loss.
+
+## Risks
+- The porous PTFE diaphragm is electrically insulating, so if catalyst/current-collector integration is poor, electronic contact and effective reaction area may decline.
+- A more hydrophobic PTFE path can reduce flooding, but if pores are too fine or the layer is too thick, water supply to the catalyst may become insufficient locally.
+- The KG links flooding to KOH electrolyte in CORR devices, so alkaline operation may still drive salt/water management issues even after the transport-layer swap.
+- The KG also contains a flooding link involving porous PTFE diaphragm in another context, so PTFE is not a guarantee against flooding; structure and integration still matter.
+- Mechanical attachment or compression may be different from carbon paper and could create delamination or unstable interfacial contact if not controlled.
+
+## Minimum Experiment
+- Use the existing CORR flow-cell format and KOH electrolyte already represented in the KG; change only the cathode porous transport layer from carbon paper to hydrophobic porous PTFE diaphragm.
+- Keep catalyst, current collector, electrolyte composition, feed composition, geometric area, and compression constant.
+- Measure CORR partial current stability, cell voltage/HFR, and evidence of flooding or liquid breakthrough during a short durability run.
+- Post-run inspect the porous layer and catalyst interface for wetting pattern and mechanical integrity.
+
+## Discriminating Test
+- Build two otherwise identical CORR flow cells in KOH electrolyte: baseline carbon-paper cathode transport layer vs hydrophobic porous PTFE diaphragm as the cathode-facing porous transport layer.
+- At fixed CO feed, current density, and electrolyte, compare stability of partial current, pressure drop, and onset of flooding over time.
+- Image or quantify liquid breakthrough / retained liquid in the porous layer after operation; lower breakthrough with maintained CORR rate supports the PTFE-path hypothesis.
+- Track cell voltage / HFR change; if gas access improves but resistance rises too much, the PTFE path is not yet acceptable.
+
+## Diagnostic Trigger
+- Observed or inferred mismatch between carbon-paper pore structure and aerosol/droplet transport in gas-aerosol-solid contacting.
+- Flooding risk is already documented in gas-fed CORR devices in KOH electrolyte, so a more hydrophobic/open transport layer is needed before changing catalyst or full stack.
+- Need for a more stable porous contact path for gas, aerosol, and catalyst contact without yet specifying a new catalyst stack.
+
+Go/No-Go: Go if the PTFE-based porous path shows lower flooding or liquid breakthrough and equal-or-better sustained CORR performance at matched current density without a prohibitive rise in cell resistance. No-go if resistance increases substantially or catalyst contact becomes unstable enough to offset gas-transport gains.
+
+## Literature
+- doc_0155 | 10.1021/acsenergylett.8b01734 | High Rate, Selective, and Stable Electroreduction of CO<sub>2</sub> to CO in Basic and Neutral Media
+- doc_0069 | 10.1021/acscatal.0c01670 | Correlating Oxidation State and Surface Area to Activity from <i>Operando</i> Studies of Copper CO Electroreduction Catalysts in a Gas-Fed Device
+- doc_2536 | 10.1038/s41929-018-0084-7 | Steering post-C–C coupling selectivity enables high efficiency electroreduction of carbon dioxide to multi-carbon alcohols
+- doc_2142 | 10.1039/d5cs00969c | Efficient green synthesis of ammonia: from mechanistic understanding to reactor design for potential production
+
+Score: 0.82
+
+Referenced nodes: 98
+Referenced edges: 80

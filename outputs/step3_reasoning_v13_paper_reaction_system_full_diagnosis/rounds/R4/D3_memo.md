@@ -1,0 +1,54 @@
+# D3 Recommendation Memo - R4
+
+Primary bottleneck: Depletion of static local water and K+ inventory because the previous design stored these species near the cathode but did not provide a continuous replenishment pathway; in alkaline CO2 electrolysis this must be solved without triggering precipitation that blocks CO2 transport.
+Hypothesis: The current bottleneck is not initial local availability of water or K+, but the absence of a replenishable transport path. A zero-gap architecture with continuous cathode-adjacent alkaline flow can resupply water and K+ to the reaction interface over time, while the porous PTFE gas path preserves CO2 access. Because AEMs transmit anions rather than K+, cathode-side K+ must be delivered by local liquid-phase transport rather than assumed membrane transport. Adding a cooler-cathode/warmer-anode non-isothermal gradient should further mitigate carbonate precipitation that otherwise arises in alkaline, cation-containing operation and blocks CO2 diffusion.
+
+## New Architecture
+A gradual R4 convergence to a zero-gap AEM-based CO2 electrolyzer in which the cathode is a gas-diffusion electrode fed by CO2 through a porous PTFE separator/diaphragm path, while a continuously recirculated K-containing alkaline liquid stream runs adjacent to the cathode to replenish water and cation availability; the anode is separated by an AEM, and optional cooler-cathode/warmer-anode non-isothermal control is used to reduce salt precipitation.
+
+## Design Changes
+- Replace the static local water/K+ reservoir with a flowing alkaline cathode-side replenishment path in a zero-gap gas-aerosol-solid / gas-liquid-solid CO2 electrolyzer: CO2 gas feed through a porous PTFE gas-diffusion separator/GDE, an AEM between electrodes, and continuous low-rate KOH/K-containing alkaline recirculation adjacent to the cathode plus non-isothermal operation with a cooler cathode and warmer anode to sustain water supply and suppress salt precipitation.
+
+## Rationale
+This is a single-variable transport upgrade: change from static local storage to dynamic local replenishment. The KG supports each part of that move. First, alkali cations, especially larger ones, increase CO2RR rate/selectivity and partial current density, and K+ lowers the interfacial barrier relative to Li+; therefore maintaining K+ availability near the cathode is beneficial for sustained catalysis rather than only initial activation (doc_2190; doc_2546; KG edge from K+/Li+ water environment to lower IS-ET barrier with K+). Second, gas-diffusion architectures are the supported route to high-rate low-temperature CO2 electrolysis, so the replenishment path should be integrated into a gas-fed GDE/porous PTFE contacting structure rather than replacing gas feed with a bulk liquid cell (doc_2065). Third, the KG explicitly flags alkaline/cation-driven carbonate salt precipitation as a gas-access failure mode. Therefore the replenishment path should be continuous but low-volume and paired with operating conditions that reduce precipitation. Non-isothermal operation with a cooler cathode and warmer anode is directly evidenced to improve CO partial current density and energy efficiency and to enable stable operation without salt precipitation for long duration (doc_0678; doc_2033). Transport-function impact: ion transport—benefit: zero-gap AEM architecture shortens anion-conduction distance and avoids relying on K+ crossover because AEM transports anions, not K+; risk: if local liquid layer becomes discontinuous, ionic continuity at the cathode can worsen. Water management—benefit: continuous cathode-adjacent alkaline flow replenishes consumed/evaporated water instead of depleting a fixed reservoir; risk: excessive flow can flood pores. Gas access—benefit: porous PTFE maintains a dedicated CO2 gas pathway in gas-aerosol-solid / gas-liquid-solid contacting; risk: carbonate precipitation or liquid intrusion can block that pathway. Cation availability—benefit: recirculating K-containing electrolyte sustains local K+ concentration over time, consistent with cation-promoted CO2RR trends; risk: excessive K+ with OH- can intensify salting. Ohmic loss—benefit: zero-gap geometry and maintained hydration should limit resistance growth; risk: salt deposition or over-wetted porous layers can increase transport resistance and cell voltage. Mechanical stability—benefit: zero-gap/PTFE-gasket/PTFE porous-layer assemblies have implementation precedent in the KG; risk: adding recirculation and thermal gradient may challenge sealing/compression if not controlled.
+
+## Expected Improvement
+The proposed architecture should convert finite local promoter/water storage into a sustained transport path, maintaining cation availability and interfacial hydration over time while preserving gas access. Relative to a static reservoir design, it is expected to delay performance decay, reduce resistance growth, and improve steady CO2RR current/selectivity stability; added non-isothermal control is expected to further lower precipitation-driven blockage and improve CO partial current density and energy efficiency.
+
+## Risks
+- Higher local alkalinity and K+ availability can accelerate carbonate salt precipitation and block CO2 diffusion; this failure mode is explicitly evidenced for alkaline/cation-containing operation.
+- Continuous liquid replenishment near the cathode can increase flooding risk in the gas-diffusion region, reducing gas access through the porous PTFE/GDE pathway.
+- If cathode-side recirculation is too low, K+ and water replenishment may remain insufficient; if too high, liquid intrusion may raise mass-transfer losses.
+- Because the AEM conducts anions rather than K+, K+ retention near the cathode depends on hydrodynamics and local evaporation/consumption balance rather than membrane delivery.
+- Introducing thermal gradients adds hardware complexity and may create sealing/compression sensitivity, though zero-gap and PTFE-gasket architectures provide a relevant implementation precedent.
+
+## Minimum Experiment
+- Build a zero-gap cell with porous PTFE-supported CO2 gas feed at the cathode, an AEM separator, and continuous cathode-side recirculation of K-containing alkaline electrolyte at fixed low flow.
+- Use the same cathode, same membrane, same compression, and same CO2 feed while switching only between static local reservoir vs flowing cathode-side replenishment.
+- Run galvanostatic durability tests long enough to expose depletion behavior, while measuring CO product rate/FE, cell voltage, high-frequency resistance, cathode pressure drop, and post-test salt deposition in the gas-diffusion layer.
+- Add a second step using the same flowing architecture under isothermal versus cooler-cathode/warmer-anode conditions to test precipitation suppression.
+
+## Discriminating Test
+- Compare otherwise identical zero-gap CO2 electrolyzers with (A) static preloaded cathode reservoir and (B) continuous cathode-side alkaline recirculation path containing K+ under the same CO2 gas feed.
+- Within configuration B, compare isothermal vs cooler-cathode/warmer-anode operation to test whether dynamic replenishment alone is sufficient or whether anti-precipitation thermal control is also required.
+- Track time-resolved CO partial current density/FE, cell voltage, high-frequency resistance, outlet humidity/water balance, and visual or gravimetric carbonate salt accumulation in the gas-diffusion region.
+
+## Diagnostic Trigger
+- Prior failure mode explicitly identifies depletion of static water and K+ storage during operation.
+- KG evidence links larger alkali cations to higher CO2RR rate/current density and lower interfacial barrier with K+ than Li+.
+- KG evidence also shows alkaline operation can cause salting/precipitation that blocks CO2 diffusion, so replenishment must be dynamic and paired with precipitation control.
+- Non-isothermal operation is evidenced to improve CO partial current density, energy efficiency, and stable operation without salt precipitation.
+
+Go/No-Go: Go if continuous K+-containing alkaline replenishment sustains stable CO2RR performance substantially longer than the static-reservoir baseline, with lower resistance drift and less carbonate deposition; strongest go if non-isothermal operation further suppresses salt accumulation without sacrificing CO2 access. No-go if the flowing alkaline path mainly increases flooding/precipitation so that gas transport and voltage stability worsen versus the static design.
+
+## Literature
+- doc_0678 | 10.1038/s41467-025-59604-6 | Non-isothermal CO2 electrolysis enables simultaneous enhanced electrochemical and anti-precipitation performance
+- doc_2033 | 10.1038/s41467-025-59604-6 | Non-isothermal CO2 electrolysis enables simultaneous enhanced electrochemical and anti-precipitation performance
+- doc_2065 | 10.1038/s41560-021-00973-9 | Gas diffusion electrodes, reactor designs and key metrics of low-temperature CO2 electrolysers
+- doc_2190 | 10.1021/acscatal.0c03553 | Cation Effect on Interfacial CO<sub>2</sub> Concentration in the Electrochemical CO<sub>2</sub> Reduction Reaction
+- doc_2546 | 10.1038/s41929-022-00816-0 | Correlating hydration free energy and specific adsorption of alkali metal cations during CO2 electroreduction on Au
+
+Score: 0.85
+
+Referenced nodes: 100
+Referenced edges: 80

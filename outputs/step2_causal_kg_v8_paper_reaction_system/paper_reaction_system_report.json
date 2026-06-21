@@ -1,0 +1,32 @@
+{
+  "base_kg": "C:\\Users\\logan\\reactor_agent\\outputs\\step2_causal_kg_v6_anode_edges",
+  "output_kg": "C:\\Users\\logan\\reactor_agent\\outputs\\step2_causal_kg_v8_paper_reaction_system",
+  "papers": 2497,
+  "nodes": 32619,
+  "edges": 21833,
+  "paper_reaction_system_distribution": {
+    "other_reaction": 899,
+    "CO2RR": 1092,
+    "non_reaction": 156,
+    "unknown": 203,
+    "both": 43,
+    "CORR": 104
+  },
+  "edge_reaction_system_distribution": {
+    "other_reaction": 7892,
+    "CO2RR": 9590,
+    "unknown": 2882,
+    "CORR": 872,
+    "transferable": 597
+  },
+  "inheritance_distribution": {
+    "CO2RR->CO2RR": 9590,
+    "CORR->CORR": 872,
+    "both->transferable": 394,
+    "non_reaction->transferable": 203,
+    "non_reaction->unknown": 1160,
+    "other_reaction->other_reaction": 7892,
+    "unknown->unknown": 1722
+  },
+  "missing_edge_reaction_system": 0
+}

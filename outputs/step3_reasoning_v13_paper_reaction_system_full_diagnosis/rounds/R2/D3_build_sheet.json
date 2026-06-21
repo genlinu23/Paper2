@@ -1,0 +1,64 @@
+{
+  "round_id": "R2",
+  "layers": [
+    {
+      "order": 1,
+      "component": "cathode",
+      "material": "Cu",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 2,
+      "component": "electrolyte/interlayer",
+      "material": "liquid electrolyte, solid electrolyte",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 3,
+      "component": "separator",
+      "material": "porous PTFE, PTFE, diaphragm, separator, AEM, membrane",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 4,
+      "component": "anode",
+      "material": "Pt, anode",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    }
+  ],
+  "cathode_feed": [
+    "CO2"
+  ],
+  "anode_feed": [
+    "not specified"
+  ],
+  "use_koh_spray": false,
+  "prewetting": [
+    "prewetting described in recommendation"
+  ],
+  "gas_params": {
+    "cathode_flow": "10-50 sccm, feed from generated recommendation: CO2",
+    "anode_flow": "10-50 sccm, feed from generated recommendation: not specified",
+    "pressure": "near ambient, balanced across compartments"
+  },
+  "gasket_and_clamping": [
+    "not specified by recommendation"
+  ],
+  "test_plan": [
+    "Use the Proton-exchange membrane porous solid electrolyte (PSE) reactor backbone evidenced in the KG, keeping catalyst and anode unchanged.",
+    "Introduce a porous PTFE diaphragm/hydrophobic PTFE gas-path layer at the cathode-facing side to replace the continuous liquid-film contact with gas-aerosol-solid contacting.",
+    "Feed CO2 gas as in the PSE reactor and operate with the minimum liquid delivery needed to wet the porous solid-electrolyte path rather than maintain a continuous catholyte film.",
+    "Collect EIS/HFR, cathode pressure drop or fluctuation, and steady partial current/FE over time."
+  ],
+  "teardown_photo_points": [
+    "not specified by recommendation"
+  ],
+  "safety_checks": [
+    "standard electrochemical cell safety checks"
+  ],
+  "notes": "A gradual convergence from the prior porous solid-electrolyte reactor toward a cathode-side gas-aerosol-solid contacting PSE architecture: Nafion-117/porous solid electrolyte remain the ion-transport backbone, while a hydrophobic porous PTFE diaphragm defines the gas-access side and suppresses a persistent flooded liquid layer."
+}

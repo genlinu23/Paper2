@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+*.log
+*.tmp
+notes.md
+task_plan.md
+
+# Keep the locked v13/v8 artifacts below; ignore older/heavier intermediate runs.
+outputs/*
+!outputs/step2_causal_kg_v8_paper_reaction_system/
+!outputs/step2_causal_kg_v8_paper_reaction_system/**
+outputs/step2_causal_kg_v8_paper_reaction_system/paper_reaction_by_doc/
+!outputs/step3_reasoning_v13_paper_reaction_system_full_diagnosis/
+!outputs/step3_reasoning_v13_paper_reaction_system_full_diagnosis/**

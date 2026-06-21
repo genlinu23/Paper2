@@ -1,0 +1,66 @@
+{
+  "round_id": "R7",
+  "layers": [
+    {
+      "order": 1,
+      "component": "cathode",
+      "material": "Cu, GDE",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 2,
+      "component": "electrolyte/interlayer",
+      "material": "described in recommendation",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 3,
+      "component": "separator",
+      "material": "porous PTFE, PTFE, diaphragm, separator, membrane",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 4,
+      "component": "anode",
+      "material": "Pt",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    }
+  ],
+  "cathode_feed": [
+    "CO"
+  ],
+  "anode_feed": [
+    "not specified"
+  ],
+  "use_koh_spray": true,
+  "prewetting": [
+    "prewetting described in recommendation"
+  ],
+  "gas_params": {
+    "cathode_flow": "10-50 sccm, feed from generated recommendation: CO",
+    "anode_flow": "10-50 sccm, feed from generated recommendation: not specified",
+    "pressure": "near ambient, balanced across compartments",
+    "spray": "1 M KOH aerosol, controlled droplet loading"
+  },
+  "gasket_and_clamping": [
+    "not specified by recommendation"
+  ],
+  "test_plan": [
+    "Build a two-electrode CO reduction flow reactor with identical geometry except for separator choice: porous PTFE diaphragm/separator versus incumbent ion-exchange membrane.",
+    "Use the same supported polycrystalline Cu powder on PTFE-treated carbon fiber paper cathode in both cells.",
+    "Feed gaseous CO with a controlled aerosol containing H2O and K+ to the cathode so that cation and water delivery are assigned to the gas-aerosol-solid path.",
+    "Record polarization, high-frequency resistance, product distribution/current efficiency, flooding onset, and stability over a fixed galvanostatic hold."
+  ],
+  "teardown_photo_points": [
+    "not specified by recommendation"
+  ],
+  "safety_checks": [
+    "standard electrochemical cell safety checks",
+    "CO ventilation"
+  ],
+  "notes": "A CO-reduction flow reactor using a gas-aerosol-solid contacting cathode, with a supported polycrystalline Cu powder gas diffusion electrode on PTFE-treated carbon fiber paper and a porous PTFE diaphragm/separator used only for physical phase isolation/cost reduction, while H2O and K+ are delivered through the cathode aerosol stream rather than through the separator."
+}

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "description": "Conservative KG synonym groups for post-build node normalization. Groups are type-scoped and human-auditable.",
+  "groups": [
+    {
+      "name": "ptfe_separator_diaphragm",
+      "type": "Separator",
+      "canonical_node_id": "Separator:porous_PTFE_diaphragm",
+      "canonical_label": "porous PTFE diaphragm",
+      "aliases": [
+        "Separator:PTFE_porous_diaphragm",
+        "Separator:PTFE_membrane",
+        "Separator:PTFE_porous_membrane",
+        "Separator:porous_PTFE_membrane",
+        "Separator:ePTFE_membrane",
+        "Separator:Expanded_Polytetrafluoroethylene_ePTFE_membrane",
+        "Separator:Hydrophobic_PTFE_membrane",
+        "Separator:hydrophobic_PTFE_membrane",
+        "Separator:Nanoporous_PTFE_membrane",
+        "Separator:Nanoporous_PTFE_membrane_20_nm_pore_size",
+        "Separator:PTFE_membrane_with_hydrophobic_pore_structure",
+        "Separator:Porous_PTFE_membrane_with_450_nm_pore_size_non_conductive",
+        "Separator:porous_PTFE_film",
+        "Separator:porous_PTFE_films",
+        "PTFE porous diaphragm",
+        "PTFE membrane",
+        "PTFE porous membrane",
+        "porous PTFE membrane",
+        "ePTFE membrane",
+        "expanded polytetrafluoroethylene membrane",
+        "expanded polytetrafluoroethylene ePTFE membrane",
+        "hydrophobic PTFE membrane",
+        "nanoporous PTFE membrane",
+        "porous PTFE film"
+      ]
+    },
+    {
+      "name": "pt_ptl_anode",
+      "type": "Anode",
+      "canonical_node_id": "Anode:Pt_PTL_anode",
+      "canonical_label": "Pt@PTL anode",
+      "aliases": [
+        "Anode:Pt@PTL_anode",
+        "Anode:Pt_PTL_anode",
+        "Anode:Pt_on_PTL_anode",
+        "Anode:Pt_on_porous_transport_layer",
+        "Anode:Pt_loaded_PTL",
+        "Anode:Pt-loaded_PTL",
+        "Anode:Pt_porous_transport_layer",
+        "Anode:Pt-coated_porous_transport_layer",
+        "Anode:Pt_catalyst_on_porous_transport_layer",
+        "Pt@PTL anode",
+        "Pt PTL anode",
+        "Pt on PTL anode",
+        "Pt on porous transport layer",
+        "Pt-loaded PTL",
+        "Pt loaded PTL",
+        "Pt porous transport layer",
+        "Pt-coated porous transport layer",
+        "Pt catalyst on porous transport layer",
+        "Pt@porous PTL"
+      ]
+    }
+  ]
+}

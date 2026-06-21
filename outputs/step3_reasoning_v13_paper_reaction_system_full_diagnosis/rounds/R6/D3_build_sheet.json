@@ -1,0 +1,64 @@
+{
+  "round_id": "R6",
+  "layers": [
+    {
+      "order": 1,
+      "component": "cathode",
+      "material": "Cu",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 2,
+      "component": "electrolyte/interlayer",
+      "material": "described in recommendation",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 3,
+      "component": "separator",
+      "material": "porous PTFE, PTFE, separator, AEM, membrane",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 4,
+      "component": "anode",
+      "material": "Pt, HOR",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    }
+  ],
+  "cathode_feed": [
+    "not specified"
+  ],
+  "anode_feed": [
+    "H2"
+  ],
+  "use_koh_spray": false,
+  "prewetting": [
+    "prewetting described in recommendation"
+  ],
+  "gas_params": {
+    "cathode_flow": "10-50 sccm, feed from generated recommendation: not specified",
+    "anode_flow": "10-50 sccm, feed from generated recommendation: H2",
+    "pressure": "near ambient, balanced across compartments"
+  },
+  "gasket_and_clamping": [
+    "not specified by recommendation"
+  ],
+  "test_plan": [
+    "Build one cathode variant only: Cu on porous PTFE GDL with sub-10 μm PCRL, keeping catalyst identity/loading, electrolyte, membrane, and flow hardware unchanged.",
+    "Test in the existing CO-reduction/flow-cell configuration under the same KOH electrolyte used in the baseline.",
+    "Run short steady-state holds across relevant current densities and record FE, partial currents, cell voltage, and time-to-flooding or dry-out."
+  ],
+  "teardown_photo_points": [
+    "not specified by recommendation"
+  ],
+  "safety_checks": [
+    "standard electrochemical cell safety checks",
+    "H2 leak check"
+  ],
+  "notes": "A gradual R7 convergence to a gas-fed flow-cell/MEA-like cathode architecture in which a Cu catalyst is supported on a porous PTFE transport layer and coupled to a thin PCRL, so the cathode transport path is intentionally split into gas access through PTFE pores and a short liquid/ion path at the catalyst for gas-aerosol-solid contacting."
+}

@@ -1,0 +1,66 @@
+{
+  "round_id": "R5",
+  "layers": [
+    {
+      "order": 1,
+      "component": "cathode",
+      "material": "Cu, carbon paper",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 2,
+      "component": "electrolyte/interlayer",
+      "material": "described in recommendation",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 3,
+      "component": "separator",
+      "material": "porous PTFE, PTFE, diaphragm, separator, membrane",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 4,
+      "component": "anode",
+      "material": "Pt, HOR",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    }
+  ],
+  "cathode_feed": [
+    "CO"
+  ],
+  "anode_feed": [
+    "H2"
+  ],
+  "use_koh_spray": false,
+  "prewetting": [
+    "prewetting described in recommendation"
+  ],
+  "gas_params": {
+    "cathode_flow": "10-50 sccm, feed from generated recommendation: CO",
+    "anode_flow": "10-50 sccm, feed from generated recommendation: H2",
+    "pressure": "near ambient, balanced across compartments"
+  },
+  "gasket_and_clamping": [
+    "not specified by recommendation"
+  ],
+  "test_plan": [
+    "Use the existing CORR flow-cell format and KOH electrolyte already represented in the KG; change only the cathode porous transport layer from carbon paper to hydrophobic porous PTFE diaphragm.",
+    "Keep catalyst, current collector, electrolyte composition, feed composition, geometric area, and compression constant.",
+    "Measure CORR partial current stability, cell voltage/HFR, and evidence of flooding or liquid breakthrough during a short durability run.",
+    "Post-run inspect the porous layer and catalyst interface for wetting pattern and mechanical integrity."
+  ],
+  "teardown_photo_points": [
+    "not specified by recommendation"
+  ],
+  "safety_checks": [
+    "standard electrochemical cell safety checks",
+    "CO ventilation",
+    "H2 leak check"
+  ],
+  "notes": "A gradual R5-to-R6 convergence toward a CORR flow cell in which the cathode-side porous transport path is a hydrophobic porous PTFE diaphragm/membrane rather than carbon paper, to support gas-aerosol-solid contacting without yet redefining the catalyst stack or separator scheme."
+}

@@ -1,0 +1,25 @@
+{
+  "input_kg_dir": "C:\\Users\\logan\\AppData\\Local\\Temp\\anode_reextract_m0v8qirl\\merged_raw",
+  "output_kg_dir": "C:\\Users\\logan\\reactor_agent\\outputs\\step2_causal_kg_v6_anode_edges",
+  "synonym_map": "C:\\Users\\logan\\reactor_agent\\reactor_agent\\config\\synonym_map.json",
+  "input_nodes": 32620,
+  "input_edges": 21833,
+  "redirected_node_ids": 2,
+  "deduped_edges": 0,
+  "groups": [
+    {
+      "group": "ptfe_separator_diaphragm",
+      "type": "Separator",
+      "canonical_node_id": "Separator:porous_PTFE_diaphragm",
+      "canonical_label": "porous PTFE diaphragm",
+      "members": [
+        "Separator:PTFE_porous_diaphragm",
+        "Separator:porous_PTFE_diaphragm"
+      ],
+      "member_incident_edges_before": {
+        "Separator:porous_PTFE_diaphragm": 18,
+        "Separator:PTFE_porous_diaphragm": 0
+      }
+    }
+  ]
+}

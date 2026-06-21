@@ -1,0 +1,57 @@
+{
+  "round_id": "R3",
+  "layers": [
+    {
+      "order": 1,
+      "component": "cathode",
+      "material": "Cu, carbon paper",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 2,
+      "component": "electrolyte/interlayer",
+      "material": "described in recommendation",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    },
+    {
+      "order": 3,
+      "component": "separator",
+      "material": "porous PTFE, PTFE, diaphragm, separator, AEM, membrane",
+      "thickness": "not specified",
+      "active_area": "not specified"
+    }
+  ],
+  "cathode_feed": [
+    "CO2"
+  ],
+  "anode_feed": [
+    "not specified"
+  ],
+  "use_koh_spray": false,
+  "prewetting": [
+    "prewetting described in recommendation"
+  ],
+  "gas_params": {
+    "cathode_flow": "10-50 sccm, feed from generated recommendation: CO2",
+    "anode_flow": "10-50 sccm, feed from generated recommendation: not specified",
+    "pressure": "near ambient, balanced across compartments"
+  },
+  "gasket_and_clamping": [
+    "not specified by recommendation"
+  ],
+  "test_plan": [
+    "Prepare a single cathode architecture change only: same catalyst and catalyst loading, but move from carbon paper GDL support to porous PTFE diaphragm/separator support with conductive catalyst layer.",
+    "Operate with the same CO2 feed and same K+-containing catholyte conditions used in the current reactor.",
+    "Run a stepped-current stability test long enough to expose dry-out/flooding transitions, while measuring product FE, cell voltage/HFR, and cathode pressure drop.",
+    "Post-test inspect cathode wetting pattern and any carbonate deposition location."
+  ],
+  "teardown_photo_points": [
+    "not specified by recommendation"
+  ],
+  "safety_checks": [
+    "standard electrochemical cell safety checks"
+  ],
+  "notes": "AEM-based flow cathode with the catalyst/conductive layer deposited on a porous PTFE diaphragm/separator instead of carbon paper GDL, targeting a controlled gas-liquid-solid contacting zone adjacent to the cathode where gas passes through open pores while a thin electrolyte film maintains water and K+ near the active surface."
+}
