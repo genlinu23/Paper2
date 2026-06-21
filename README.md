@@ -15,20 +15,22 @@ Public corpus metadata:
 
 - `dataset/doi_list_all_3611.csv`
 - `dataset/doi_list_kg_used_2497_with_reaction_system.csv`
+- `dataset/required_seed_papers_for_rerun.csv`
 - `dataset/dataset_summary.json`
 - `dataset/README.md`
 
 The `dataset/` directory is metadata-only. It includes DOI manifests, library/class
 partitions, chunk counts, and paper-level reaction-system labels. It does not include
 PDFs, parsed full text, abstracts, conclusions, or chunk text.
+The seed paper list is only a local rerun checklist, not a corpus partition.
 
 Step 1 implementation for the Reactor workflow.
 
 Project rule: no substitute paths are allowed. Missing inputs, metadata, or LLM integration must fail explicitly.
 
-## Step 1 anchors
+## Step 1 internal seed papers
 
-Validate the 8 anchor papers without calling the LLM:
+Validate the 8 internal seed papers without calling the LLM:
 
 ```powershell
 python -m reactor_agent.steps.literature --step1-anchors --join-only --out-dir C:\Users\logan\reactor_agent\outputs\step1_anchor_join_only
@@ -47,6 +49,10 @@ Main outputs:
 - `core_papers.json`
 - `paper_facts.json` when LLM extraction succeeds
 - `D1_summary.md` when LLM extraction succeeds
+
+These seed papers are an internal bootstrap set, not a public corpus partition.
+They must exist in the local source library before Step 1 / Step 2 reruns, or KG
+construction can miss evidence chains.
 
 ## Step 2 KG
 

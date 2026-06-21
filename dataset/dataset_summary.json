@@ -30,5 +30,15 @@
     "pdf_library": "C:\\Users\\logan\\Desktop\\project2_strict\\strict_clean_v2\\final_rule_based_ab_v1\\library",
     "json_library": "C:\\Users\\logan\\Desktop\\project2_strict\\strict_clean_v2\\final_rule_based_ab_v1\\membership_aligned_dataset_v1\\source_json_flat",
     "chunk_library": "C:\\Users\\logan\\Desktop\\project2_strict\\strict_clean_v2\\final_rule_based_ab_v1\\membership_aligned_dataset_v1\\chunk_run_v3\\03_text_chunks"
+  },
+  "required_seed_papers_for_rerun": {
+    "total": 8,
+    "present_in_public_corpus_manifest": 6,
+    "present_in_kg_used_manifest": 4,
+    "missing_from_public_corpus_manifest": [
+      "10.1038/s41586-023-06792-0",
+      "10.1021/acs.chemrev.3c00206"
+    ],
+    "purpose": "internal rerun checklist; not a corpus partition"
   }
 }

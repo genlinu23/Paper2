@@ -13,6 +13,7 @@ not contain PDFs, parsed full text, abstracts, conclusions, or chunk text.
 |---|---:|---|
 | `doi_list_all_3611.csv` | 3,611 | DOI manifest for the full local corpus after Step1 metadata alignment. |
 | `doi_list_kg_used_2497_with_reaction_system.csv` | 2,497 | DOI manifest for papers that contributed to the locked v8 KG paper-level reaction-system labeling. |
+| `required_seed_papers_for_rerun.csv` | 8 | Internal seed DOI checklist for local reruns. These papers should be present in the raw local library before rebuilding KG evidence chains. This is not a corpus partition. |
 | `dataset_summary.json` | 1 | Machine-readable summary of counts, source paths, library distribution, class distribution, and reaction-system distribution. |
 
 ## Columns
@@ -37,6 +38,19 @@ not contain PDFs, parsed full text, abstracts, conclusions, or chunk text.
 The public CSV intentionally excludes the model rationale and evidence snippets. The
 full per-document classification cache is not published because it can contain
 abstract/conclusion-derived text.
+
+`required_seed_papers_for_rerun.csv`
+
+- `doi`: DOI of an internal seed paper used by the Step1 bootstrap/check path.
+- `present_in_public_corpus_manifest`: whether the DOI appears in `doi_list_all_3611.csv`.
+- `present_in_kg_used_manifest`: whether the DOI appears in `doi_list_kg_used_2497_with_reaction_system.csv`.
+- `lib`, `class_name`, `chunk_count`, `reaction_system`: metadata when the DOI is present in the public manifests.
+- `note`: rerun action or coverage note.
+
+This file is a rerun checklist. It is not a separate library, not a dataset split,
+and not evidence by itself. These papers should be downloaded into the local raw
+library before a full Step1/Step2 rerun so the KG can build the expected evidence
+chains.
 
 ## Corpus Counts
 

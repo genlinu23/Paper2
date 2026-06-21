@@ -1,0 +1,9 @@
+doi,present_in_public_corpus_manifest,present_in_kg_used_manifest,lib,class_name,chunk_count,reaction_system,note
+10.1038/s41586-023-06792-0,false,false,,,,,required seed DOI; download into local raw library before full rerun
+10.1038/s41560-020-00761-x,true,true,lib4,classA,65,CO2RR,required seed DOI; already present in public corpus manifest
+10.1038/s41560-019-0451-x,true,true,lib1,classA,63,unknown,required seed DOI; already present in public corpus manifest
+10.1038/s41467-020-17403-1,true,true,lib4,classA,50,CO2RR,required seed DOI; already present in public corpus manifest
+10.1038/s41467-023-43300-4,true,false,lib4,classA,90,,required seed DOI; present in public corpus manifest but not in KG-used manifest
+10.1038/s41586-023-05918-8,true,true,lib3,classA,107,CORR,required seed DOI; already present in public corpus manifest
+10.1002/cssc.201902547,true,false,lib4,classB,155,,required seed DOI; present in public corpus manifest but not in KG-used manifest
+10.1021/acs.chemrev.3c00206,false,false,,,,,required seed DOI; download into local raw library before full rerun
